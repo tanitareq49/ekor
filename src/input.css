@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* * {
+    border: 1px solid red;
+} */
+
+@media screen and (max-width: 395px) {
+    #short-nav {
+        top: 38px;
+    }
+}

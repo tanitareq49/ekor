@@ -13,20 +13,20 @@
     <!-- Header start -->
     <header class="fixed top-0 w-full  z-50 bg-white">
         <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[7px] flex justify-between  items-center gap-4 relative">
-            <div class="flex items-center gap-6 2xl:gap-10 text-black">
+            <div class="flex items-center gap-4 md:gap-6 2xl:gap-10 text-black">
                 <a href="#">
                     <img src="./assets/images/ekor logo 1.png" alt="ekor logo 1">
                 </a>
-                <button id="citizen-dropdown-btn" class="text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800">Jsem občan</button>
-                <a id="entreprenuer" class="text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800" href="#">Jsem podnikatel</a>
+                <button id="citizen-dropdown-btn" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800">Jsem občan</button>
+                <a id="entreprenuer" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800" href="#">Jsem podnikatel</a>
             </div>
             <div class="absolute top-[49px] left-0 right-0 lg:static  min-h-[100vh] lg:min-h-min -translate-x-full lg:-translate-x-0 transition-transform duration-500 ease-in lg:justify-between" id="primary-navigation" data-visible="false">
-                <ul class="flex gap-8 2xl:gap-14 items-center text-base 2xl:text-lg font-bold text-green-800">
+                <ul id="short-nav" class="absolute lg:h-min lg:static top-[47px] left-0 right-0 bottom-0 bg-white border-t-2 border-t-green-800 lg:border-t-0 lg:bg-none flex flex-col lg:flex-row gap-6 lg:gap-8 2xl:gap-14 lg:items-center text-sm md:text-base 2xl:text-lg lg:font-bold text-green-800 pt-12 lg:pt-0 pl-8 lg:pl-0">
                     <li><a href="#">Jak a proč třídit</a></li>
                     <li><a href="#">O EKORu</a></li>
                     <li><a href="#">Kontakty</a></li>
-                    <li class="flex items-center gap-4 2xl:gap-8">
-                        <a class="flex items-center gap-2" href="#">
+                    <li class="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-4 2xl:gap-8">
+                        <a class="flex items-center gap-2" href="callto:518 611 688">
                             <div class="">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.3275 24.0001C15.2675 24.0001 15.2074 24.0001 15.1474 24.0001C13.2998 23.9825 11.4029 23.4313 9.50945 22.3643C8.02225 21.5235 6.52446 20.354 5.06199 18.8913C1.73435 15.5597 0.0316722 12.1821 -0.000120596 8.85395C-0.0177832 6.74472 0.218896 3.6745 2.50444 1.39215C3.39111 0.505355 4.49679 0.0107282 5.62013 0.00366211H5.65193C5.65546 0.00366211 5.65546 0.00366211 5.65899 0.00366211C7.01195 0.00366211 8.26953 0.745602 8.94071 1.93977L9.70727 3.30706L9.71787 3.33179C10.1064 4.13733 10.2937 4.75561 10.3325 5.33503C10.3855 6.15823 10.1206 6.87191 9.54124 7.45133L7.38286 9.68775C7.69373 10.5569 8.50974 12.4859 10.0817 14.0617C11.6396 15.6162 13.5189 16.397 14.3808 16.6938L16.5462 14.4468C17.1326 13.8603 17.8286 13.5812 18.6163 13.613C19.2239 13.6377 19.8668 13.8426 20.7005 14.2736L20.7252 14.2878L22.0676 15.0403C23.2651 15.7116 24.0069 16.9729 24.0034 18.3331V18.3614C23.9963 19.4814 23.5018 20.5872 22.6151 21.4775C21.6225 22.4703 20.3755 23.1734 18.8989 23.5762C17.8497 23.8623 16.684 24.0001 15.3275 24.0001ZM5.65546 1.76665H5.65193H5.63073C4.97721 1.77019 4.30956 2.08109 3.75142 2.63932C1.93924 4.45177 1.75201 7.04503 1.76614 8.83628C1.79087 11.6875 3.32046 14.6481 6.31251 17.6406C9.33282 20.6614 12.3107 22.2089 15.1615 22.2336C16.9454 22.2513 19.5312 22.0605 21.3575 20.2304C21.9157 19.6721 22.223 19.0044 22.2301 18.3508V18.3296C22.2301 17.6124 21.8344 16.9446 21.1951 16.5843L19.8668 15.8388C18.5209 15.1428 18.1288 15.3583 17.7932 15.6904L14.9142 18.6794L14.4197 18.5557C14.2925 18.5239 11.2686 17.7466 8.8312 15.3088C6.40082 12.8746 5.56008 9.81494 5.52475 9.68422L5.39405 9.20019L8.28366 6.20416C8.63691 5.85086 8.73582 5.3739 8.13529 4.1126L7.40053 2.80184C7.04021 2.16235 6.37256 1.76665 5.65546 1.76665Z" fill="currentcolor"/>
@@ -105,7 +105,7 @@
                             </defs>
                             </svg>                            
                     </div>
-                    <p class="text-white"><span class="font-bold text-base">Aktuální informace:</span> Sběrný dvůr v Kyjově nebude otevřen 5. - 6. července 202</p>
+                    <p class="text-white text-xs sm:text-sm lg:text-base"><span class="font-bold  text-xs sm:text-sm lg:text-base">Aktuální informace:</span> Sběrný dvůr v Kyjově nebude otevřen 5. - 6. července 202</p>
                 </div>
                 <div id="update-close" class="">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -243,11 +243,11 @@
     <!-- header end -->
 
     <!-- Hero Section Starts-->
-    <section class="bg-green-800 mt-[96px] relative -z-10">
-        <main class="flex items-stretch gap-[18px] min-h-svh">
-            <div class="flex-1 flex items-center justify-center relative">
-                <div class="max-w-[710px] ml-auto pl-4 md:pl-8 lg:pl-12 xl:pl-16 flex flex-col gap-8">
-                    <h1 class="font-barlow font-bold text-[64px] leading-[72px] text-white">Už více jak 30 let se staráme o vaše odpady na Kyjovsku a části Veselska a Hodonínska</h1>
+    <section class="">
+        <main class="flex flex-col md:flex-row items-stretch gap-0 md:gap-[18px] min-h-svh bg-green-800 mt-[132px] lg:mt-[96px] relative z-0">
+            <div class="flex-1 contents md:flex items-center justify-start lg:justify-center relative">
+                <div class="min-h-svh lg:min-h-[auto] max-w-full md:max-w-[710px] ml-0 lg:ml-auto pl-4 md:pl-8 lg:pl-12 xl:pl-16 flex flex-col gap-8 items-start justify-center">
+                    <h1 class="max-w-[620px] font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-white">Už více jak 30 let se staráme o vaše a části Veselska a Hodonínska</h1>
                     <div class="flex items-center gap-8">
                         <a class="py-[15px] px-8 rounded-tl-[16px] rounded-br-[16px] font-bold text-lg text-white bg-orange" href="">Naše služby</a>
                         <a class="flex items-center gap-2" href="callto:518 611 688">
@@ -271,10 +271,10 @@
                 <div class="absolute left-0 top-0 -z-10">
                     <img class="w-full h-full object-cover" src="./assets/images/frame one.png" alt="frame one">
                 </div>
-                <div class="absolute left-0 bottom-0 -z-10">
+                <div class="absolute -left-[10%] bottom-[45%] md:bottom-0 -z-10">
                     <img class="w-full h-full object-cover" src="./assets/images/Frame two.png" alt="frame two">
                 </div>
-                <div class="absolute -right-1/2 -translate-x-1/2 bottom-0 -z-10">
+                <div class="absolute right-0 bottom-[50%]  md:-right-1/2 -translate-x-0 md:-translate-x-1/2 md:bottom-0 -z-10">
                     <img class="w-full h-full object-cover" src="./assets/images/Frame three.png" alt="frame three">
                 </div>
             </div>
@@ -288,7 +288,7 @@
     <!-- second hero service-->
      <section class="bg-grey-200 relative min-h-svh pb-[64px]">
         <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16  absolute -top-[100px] left-0 right-0">
-            <div class="grid grid-cols-4 bg-white rounded-tl-[24px] rounded-br-[24px] py-10">
+            <div class="grid grid-cols-2 gap-y-6 md:grid-cols-4 bg-white rounded-tl-[24px] rounded-br-[24px] py-10">
                 <div class="flex flex-col gap-4 items-center justify-center text-center">
                     <div class="">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,8 +315,8 @@
                         </svg>                        
                     </div>
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-bold text-2xl text-green-800">112 zaměstnanců</h6>
-                        <p class="text-lg text-black">se stará o vaše odpady</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">112 zaměstnanců</h6>
+                        <p class="text-sm md:text-base lg:">se stará o vaše odpady</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 items-center justify-center text-center">
@@ -336,8 +336,8 @@
                         </svg>                                              
                     </div>
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-bold text-2xl text-green-800">4 502 tun skla</h6>
-                        <p class="text-lg text-black">vytříděno za poslední rok</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">4 502 tun skla</h6>
+                        <p class="text-sm md:text-base lg:text-lg text-black">vytříděno za poslední rok</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 items-center justify-center text-center">
@@ -356,8 +356,8 @@
                         </svg>                        
                     </div>
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-bold text-2xl text-green-800">6 156 tun plastu</h6>
-                        <p class="text-lg text-black">vytříděno za poslední rok</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">6 156 tun plastu</h6>
+                        <p class="text-sm md:text-base lg:text-lg text-black">vytříděno za poslední rok</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 items-center justify-center text-center">
@@ -369,23 +369,23 @@
                         </svg>                        
                     </div>
                     <div class="flex flex-col gap-1">
-                        <h6 class="font-bold text-2xl text-green-800">11 500 tun odpadu</h6>
-                        <p class="text-lg text-black">zpracováno za poslední rok</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">11 500 tun odpadu</h6>
+                        <p class="text-sm md:text-base lg:text-lg text-black">zpracováno za poslední rok</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pt-[140px] flex flex-col gap-10 items-center bg-grey-200">
-            <h2 class="font-barlow font-bold text-[64px] text-green-800">Nabízené služby pro občany</h2>
+        <div class="pt-[260px] md:pt-[140px] flex flex-col gap-10 items-center bg-grey-200">
+            <h2 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">Nabízené služby pro občany</h2>
             <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 w-full">
-                <div class="grid grid-cols-4 bg-white rounded-tl-[24px] rounded-br-[24px]">
+                <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 bg-white rounded-tl-[24px] rounded-br-[24px]">
                     <div class="flex flex-col gap-10 items-center px-8 pt-8 border-r-[2px] border-r-grey-200">
                         <div class="overflow-hidden rounded-tl-[16px] rounded-br-[16px]">
                             <img class="w-full h-full object-cover" src="./assets/images/popík2 1.png" alt="">
                         </div>
                         <div class="flex flex-col gap-4 items-center pb-12 text-center">
-                            <h6 class="font-bold text-2xl text-green-800">Odpad na sběrný dvůr</h6>
-                            <p class="text-lg text-black">Kdo a co se odevzdává, seznam sběrných dvorů</p>
+                            <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">Odpad na sběrný dvůr</h6>
+                            <p class="text-sm md:text-base lg:text-lg text-black">Kdo a co se odevzdává, seznam sběrných dvorů</p>
                             <a href="">
                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_50_594)">
@@ -405,8 +405,8 @@
                             <img class="w-full h-full object-cover" src="./assets/images/popík2 1 2.png" alt="">
                         </div>
                         <div class="flex flex-col gap-4 items-center pb-12 text-center">
-                            <h6 class="font-bold text-2xl text-green-800">Uložení odpadum na skládce</h6>
-                            <p class="text-lg text-black">Co se ukládá a kontakt na skládku</p>
+                            <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">Uložení odpadum na skládce</h6>
+                            <p class="">Co se ukládá a kontakt na skládku</p>
                             <a href="">
                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_50_594)">
@@ -426,8 +426,8 @@
                             <img class="w-full h-full object-cover" src="./assets/images/popík2 1 3.png" alt="">
                         </div>
                         <div class="flex flex-col gap-4 items-center pb-12 text-center">
-                            <h6 class="font-bold text-2xl text-green-800">Svoz komunálního a BIO odpadu</h6>
-                            <p class="text-lg text-black">Kdo a co se odevzdává, seznam sběrných dvorů</p>
+                            <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">Svoz komunálního a BIO odpadu</h6>
+                            <p class="">Kdo a co se odevzdává, seznam sběrných dvorů</p>
                             <a href="">
                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_50_594)">
@@ -447,8 +447,8 @@
                             <img class="w-full h-full object-cover" src="./assets/images/popík2 1 4.png" alt="">
                         </div>
                         <div class="flex flex-col gap-4 items-center justify-between pb-12 text-center">
-                            <h6 class="font-bold text-2xl text-green-800">Potřebuji přistavit kontejner</h6>
-                            <p class="text-lg text-black">Co se ukládá a kontakt na skládku</p>
+                            <h6 class="font-bold text-base md:text-lg lg:text-2xl text-green-800">Potřebuji přistavit kontejner</h6>
+                            <p class="">Co se ukládá a kontakt na skládku</p>
                             <a href="">
                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_50_594)">
@@ -465,14 +465,14 @@
                     </div>
                 </div>
             </div>
-            <h4 class="font-barlow font-bold text-[40px] text-green-800">Dále nabízíme</h4>
-            <div class="grid grid-cols-3">
+            <h4 class="font-barlow font-bold text-xl sm:text-2xl md:text-3xl lg:text-[40px] text-green-800">Dále nabízíme</h4>
+            <div class="grid grid-cols-1 gap-y-6 md:grid-cols-3">
                 <div class="flex flex-col items-center gap-4">
                     <div class="">
                         <img src="./assets/images/kompost 1.png" alt="">
                     </div>
                     <a class="flex items-center gap-2" href="">
-                        <span class="font-bold text-xl leading-[120%] text-green-800">Prodej kompostu</span>
+                        <span class="font-bold text-sm sm:text-base md:text-lg lg:text-xl leading-[120%] text-green-800">Prodej kompostu</span>
                         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_50_633)">
                             <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
@@ -490,7 +490,7 @@
                         <img src="./assets/images/poplenice 1.png" alt="">
                     </div>
                     <a class="flex items-center gap-2" href="">
-                        <span class="font-bold text-xl leading-[120%] text-green-800">Prodej nádob na odpady</span>
+                        <span class="font-bold text-sm sm:text-base md:text-lg lg:text-xl leading-[120%] text-green-800">Prodej nádob na odpady</span>
                         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_50_633)">
                             <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
@@ -508,7 +508,7 @@
                         <img src="./assets/images/recyklát 1.png" alt="">
                     </div>
                     <a class="flex items-center gap-2" href="">
-                        <span class="font-bold text-xl leading-[120%] text-green-800">Prodej recyklátu</span>
+                        <span class="font-bold text-sm sm:text-base md:text-lg lg:text-xl leading-[120%] text-green-800">Prodej recyklátu</span>
                         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_50_633)">
                             <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
@@ -528,7 +528,7 @@
 
      <!-- about the company starts -->
      <section class="bg-white py-20">
-        <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex gap-[130px]">
+        <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col lg:flex-row gap-8 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[130px]">
             <div class="flex-1 relative min-h-[550px]">
                 <div class="overflow-hidden rounded-tl-[24px] rounded-br-[24px] absolute top-0 left-0 z-10">
                     <img class="w-full h-full object-cover" src="./assets/images/about ekorr/about one.png" alt="aobut image one">
@@ -536,7 +536,7 @@
                 <div class="overflow-hidden rounded-tl-[24px] rounded-br-[24px] absolute top-[104px] right-0 z-20">
                     <img class="w-full h-full object-cover" src="./assets/images/about ekorr/about two.png" alt="about image two">
                 </div>
-                <div class="absolute top-0 -right-[10%]">
+                <div class="absolute top-0 -right-0 lg:-right-[10%]">
                     <img src="./assets/images/about ekorr/about frame top.png" alt="frame top">
                 </div>
                 <div class="absolute bottom-0 -left-[10%] z-0">
@@ -545,8 +545,8 @@
             </div>
             <div class="flex-1 flex flex-col gap-12 items-center justify-center p-4">
                 <div class="flex flex-col gap-6">
-                    <h2 class="font-barlow font-bold text-[64px] text-green-800 leading-[120%]">O společnosti EKOR, s.r.o.</h2>
-                    <p class="text-xl leading-[140%] text-black">Naši společnost v současnosti stoprocentně vlastní města a obce regionu Kyjovska, i když při vzniku v roce 1994 byl podíl měst a obcí Kyjovska 60 %. Důvodem vzniku společnosti byla nutnost řešení nových podmínek v odpadovém hospodářství.</p>
+                    <h2 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">O společnosti EKOR, s.r.o.</h2>
+                    <p class="text-sm md:text-base lg:text-lg xl:text-xl leading-[140%] text-black">Naši společnost v současnosti stoprocentně vlastní města a obce regionu Kyjovska, i když při vzniku v roce 1994 byl podíl měst a obcí Kyjovska 60 %. Důvodem vzniku společnosti byla nutnost řešení nových podmínek v odpadovém hospodářství.</p>
                 </div>
                 <button class="self-start px-8 py-2 font-bold text-lg text-orange border-[2px] border-orange rounded-tl-[16px] rounded-br-[16px]">Více o nás</button>
             </div>
@@ -555,64 +555,101 @@
      <!-- about section ends -->
 
      <!-- news starts -->
-     <section>
-        <h1
-        class="text-2xl text-center lg:text-[64px] text-green-800 font-bold font-barlow leading-none "
-      >
-      Aktuality
-      </h1>
-        <div class="max-w-6xl flex flex-wrap justify-center px-4 m-auto gap-1 mt-6 bg-white">
-          <div class="w-64 p-6 h-[451px] border">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover object-center rounded-tl-lg rounded-br-lg " src="./public/imgaes/Aktuality-2.png" alt="">
-            </div>
-             <div class="text-center mt-6">
-              <p class="text-black text-lg">11 / 09 / 2024</p>
-              <h4 class="text-green-800 text-lx font-bold font-inter">Máte doma starou pračku, ledničku či mikrovlnu? Darujte ji.</h4>
-              <svg class="m-auto mt-4 cursor-pointer " width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
-                </svg>
-             </div>
-           </div>
-           <div class="w-64 p-6 h-[451px] border">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover object-center rounded-tl-lg rounded-br-lg " src="./public/imgaes/Aktuality-2.png" alt="">
-            </div>
-             <div class="text-center mt-6">
-              <p class="text-black text-lg">11 / 09 / 2024</p>
-              <h4 class="text-green-800 text-lx font-bold font-inter">Máte doma starou pračku, ledničku či mikrovlnu? Darujte ji.</h4>
-              <svg class="m-auto mt-4 cursor-pointer " width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
-                </svg>
-             </div>
-           </div>
-           <div class="w-64 p-6 h-[451px] border">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover object-center rounded-tl-lg rounded-br-lg " src="./public/imgaes/Aktuality-2.png" alt="">
-            </div>
-             <div class="text-center mt-6">
-              <p class="text-black text-lg">11 / 09 / 2024</p>
-              <h4 class="text-green-800 text-lx font-bold font-inter">Máte doma starou pračku, ledničku či mikrovlnu? Darujte ji.</h4>
-              <svg class="m-auto mt-4 cursor-pointer " width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
-                </svg>
-             </div>
-           </div>
-           <div class="w-64 p-6 h-[451px] border">
-            <div class="h-48 overflow-hidden">
-              <img class="w-full h-full object-cover object-center rounded-tl-lg rounded-br-lg " src="./public/imgaes/Aktuality-2.png" alt="">
-            </div>
-             <div class="text-center mt-6">
-              <p class="text-black text-lg">11 / 09 / 2024</p>
-              <h4 class="text-green-800 text-lx font-bold font-inter">Máte doma starou pračku, ledničku či mikrovlnu? Darujte ji.</h4>
-              <svg class="m-auto mt-4 cursor-pointer " width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
-                </svg>
-             </div>
-           </div>
-        </div>
-        <button class="w-48 h-12 border border-orange text-orange rounded-tl-lg rounded-br-lg m-auto flex justify-center items-center my-10">Archív aktulait</button>
-      </section>
+     <section class="bg-grey-200 relative min-h-svh pb-[64px]">
+      <div class="pt-[56px] flex flex-col gap-10 items-center bg-grey-200">
+          <h2 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">Aktuality</h2>
+          <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 w-full flex flex-col gap-[26px] md:gap-[36px] lg:gap-[56px]">
+              <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 bg-white rounded-tl-[24px] rounded-br-[24px]">
+                  <div class="flex flex-col gap-10 items-center px-8 pt-8 border-r-[2px] border-r-grey-200">
+                      <div class="overflow-hidden rounded-tl-[16px] rounded-br-[16px]">
+                          <img class="w-full h-full object-cover" src="./assets/images/news/news 1.png" alt="">
+                      </div>
+                      <div class="flex flex-col gap-4 items-center pb-12 text-center">
+                          <p class="text-sm md:text-base lg:text-lg text-black">11 / 09 / 2024</p>
+                          <h6 class="font-bold text-base md:text-lg lg:text-xl text-green-800">Máte doma starou pračku, ledničku či mikrovlnu? Darujte ji.</h6>
+                          <a href="">
+                              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_50_594)">
+                                  <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_50_594">
+                                  <rect width="10" height="16" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                              </svg>                                
+                          </a>
+                      </div>
+                  </div>
+                  <div class="flex flex-col gap-10 items-center px-8 pt-8 border-r-[2px] border-r-grey-200">
+                      <div class="overflow-hidden rounded-tl-[16px] rounded-br-[16px]">
+                          <img class="w-full h-full object-cover" src="./assets/images/news/news 2.png" alt="">
+                      </div>
+                      <div class="flex flex-col gap-4 items-center pb-12 text-center">
+                        <p class="text-sm md:text-base lg:text-lg text-black">11 / 09 / 2024</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-xl text-green-800">Omezení provozní doby sběrného dvoru Kyjov Malešice</h6>
+                        <a href="">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_50_594)">
+                                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_50_594">
+                                <rect width="10" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-10 items-center px-8 pt-8 border-r-[2px] border-r-grey-200">
+                      <div class="overflow-hidden rounded-tl-[16px] rounded-br-[16px]">
+                          <img class="w-full h-full object-cover" src="./assets/images/news/news 3.png" alt="">
+                      </div>
+                      <div class="flex flex-col gap-4 items-center pb-12 text-center">
+                        <p class="text-sm md:text-base lg:text-lg text-black">11 / 09 / 2024</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-xl text-green-800">Jak se vyváží odpad 
+                          o vánočních svátcích a po novém roce?</h6>
+                        <a href="">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_50_594)">
+                                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_50_594">
+                                <rect width="10" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-10 items-center px-8 pt-8 border-r-[2px] border-r-grey-200">
+                      <div class="overflow-hidden rounded-tl-[16px] rounded-br-[16px]">
+                          <img class="w-full h-full object-cover" src="./assets/images/news/news 4.png" alt="">
+                      </div>
+                      <div class="flex flex-col gap-4 items-center pb-12 text-center">
+                        <p class="text-sm md:text-base lg:text-lg text-black">11 / 09 / 2024</p>
+                        <h6 class="font-bold text-base md:text-lg lg:text-xl text-green-800">Nějaký nadpis novinky z EKORu a jeho okolí co je nového</h6>
+                        <a href="">
+                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_50_594)">
+                                <path d="M1.62833 16L0 14.4484L6.74793 8L0 1.55604L1.62833 0L10 8L1.62833 16Z" fill="#1D7460"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_50_594">
+                                <rect width="10" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </a>
+                    </div>
+                  </div>
+              </div>
+              <button class="self-center px-8 py-[15px] border-[2px] border-orange rounded-tl-[16px] rounded-br-[16px text-orange text-lg font-bold">Archív aktulait</button>
+          </div>
+      </div>
+   </section>
       <!-- news ends -->
 
       <!-- contact starts-->
