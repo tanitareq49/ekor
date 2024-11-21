@@ -19,6 +19,19 @@ module.exports = {
         'grey-200': '#F4F5F6',
         'grey-400': '#ECECEC'
       },
+      screens: {
+        'sm': '640px',
+
+        'md': '768px',
+
+        'lg': '1024px',
+
+        'xl': '1220px',
+
+        '2xl': '1300',
+
+        '3xl': '1420px'
+      }
     },
   },
   plugins: [],
