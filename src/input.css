@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-    border: 1px solid red;
-} */
-
 @media screen and (max-width: 395px) {
     #short-nav {
         top: 38px;
     }
+}
+
+.active{
+    display: block;
+}
+.btn-active{
+    background-color: white;
 }
