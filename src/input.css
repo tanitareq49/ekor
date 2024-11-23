@@ -9,7 +9,7 @@
 }
 
 .active{
-    display: block;
+    display: flex;
 }
 .btn-active{
     background-color: white;
