@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kontakt</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-inter">
+      <!-- Header start -->
+      <header class="fixed top-0 w-full  z-50 bg-white">
+      <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[7px] flex justify-between  items-center gap-4 relative">
+          <div class="flex items-center gap-4 md:gap-6 2xl:gap-10 text-black">
+              <a href="#">
+                  <img src="./assets/images/ekor logo 1.png" alt="ekor logo 1">
+              </a>
+              <button id="citizen-dropdown-btn" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800">Jsem občan</button>
+              <a id="entreprenuer" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800" href="#">Jsem podnikatel</a>
+          </div>
+          <div class="absolute top-[49px] left-0 right-0 lg:static  min-h-[100vh] lg:min-h-min -translate-x-full lg:-translate-x-0 transition-transform duration-500 ease-in lg:justify-between" id="primary-navigation" data-visible="false">
+              <ul id="short-nav" class="absolute lg:h-min lg:static top-[47px] left-0 right-0 bottom-0 bg-white border-t-2 border-t-green-800 lg:border-t-0 lg:bg-none flex flex-col lg:flex-row gap-6 lg:gap-8 2xl:gap-14 lg:items-center text-sm md:text-base 2xl:text-lg lg:font-bold text-green-800 pt-12 lg:pt-0 pl-8 lg:pl-0">
+                  <li><a href="#">Jak a proč třídit</a></li>
+                  <li><a href="#">O EKORu</a></li>
+                  <li><a href="#">Kontakty</a></li>
+                  <li class="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-4 2xl:gap-8">
+                      <a class="flex items-center gap-2" href="callto:518 611 688">
+                          <div class="">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.3275 24.0001C15.2675 24.0001 15.2074 24.0001 15.1474 24.0001C13.2998 23.9825 11.4029 23.4313 9.50945 22.3643C8.02225 21.5235 6.52446 20.354 5.06199 18.8913C1.73435 15.5597 0.0316722 12.1821 -0.000120596 8.85395C-0.0177832 6.74472 0.218896 3.6745 2.50444 1.39215C3.39111 0.505355 4.49679 0.0107282 5.62013 0.00366211H5.65193C5.65546 0.00366211 5.65546 0.00366211 5.65899 0.00366211C7.01195 0.00366211 8.26953 0.745602 8.94071 1.93977L9.70727 3.30706L9.71787 3.33179C10.1064 4.13733 10.2937 4.75561 10.3325 5.33503C10.3855 6.15823 10.1206 6.87191 9.54124 7.45133L7.38286 9.68775C7.69373 10.5569 8.50974 12.4859 10.0817 14.0617C11.6396 15.6162 13.5189 16.397 14.3808 16.6938L16.5462 14.4468C17.1326 13.8603 17.8286 13.5812 18.6163 13.613C19.2239 13.6377 19.8668 13.8426 20.7005 14.2736L20.7252 14.2878L22.0676 15.0403C23.2651 15.7116 24.0069 16.9729 24.0034 18.3331V18.3614C23.9963 19.4814 23.5018 20.5872 22.6151 21.4775C21.6225 22.4703 20.3755 23.1734 18.8989 23.5762C17.8497 23.8623 16.684 24.0001 15.3275 24.0001ZM5.65546 1.76665H5.65193H5.63073C4.97721 1.77019 4.30956 2.08109 3.75142 2.63932C1.93924 4.45177 1.75201 7.04503 1.76614 8.83628C1.79087 11.6875 3.32046 14.6481 6.31251 17.6406C9.33282 20.6614 12.3107 22.2089 15.1615 22.2336C16.9454 22.2513 19.5312 22.0605 21.3575 20.2304C21.9157 19.6721 22.223 19.0044 22.2301 18.3508V18.3296C22.2301 17.6124 21.8344 16.9446 21.1951 16.5843L19.8668 15.8388C18.5209 15.1428 18.1288 15.3583 17.7932 15.6904L14.9142 18.6794L14.4197 18.5557C14.2925 18.5239 11.2686 17.7466 8.8312 15.3088C6.40082 12.8746 5.56008 9.81494 5.52475 9.68422L5.39405 9.20019L8.28366 6.20416C8.63691 5.85086 8.73582 5.3739 8.13529 4.1126L7.40053 2.80184C7.04021 2.16235 6.37256 1.76665 5.65546 1.76665Z" fill="currentcolor"/>
+                                  <path d="M23.9995 11.2462H22.2333C22.2333 6.0208 17.9801 1.76701 12.752 1.76701V0.000488281C15.7546 0.000488281 18.5806 1.16993 20.7037 3.29329C22.8267 5.42019 23.9995 8.24309 23.9995 11.2462Z" fill="#F16520"/>
+                                  <path d="M16.4611 11.2461H14.6948C14.6948 10.1756 13.8223 9.3029 12.752 9.3029V7.53638C14.7973 7.53638 16.4611 9.20044 16.4611 11.2461Z" fill="#F16520"/>
+                                  <path d="M20.2303 11.2461H18.4641C18.4641 8.09812 15.903 5.53313 12.752 5.53313V3.7666C16.8744 3.77013 20.2303 7.123 20.2303 11.2461Z" fill="#F16520"/>
+                                  </svg>                                    
+                          </div>
+                          <span>518 611 688</span>
+                      </a>
+                      <div class="">
+                          <button id="open-search">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_49_889)">
+                                  <path d="M12.691 5.49139C11.7293 4.52979 10.4509 4.0002 9.09092 4.00024C8.48839 4.00024 8 4.48868 8 5.09117C8.00009 5.6937 8.48844 6.18209 9.09097 6.18209C9.86806 6.18209 10.5986 6.48462 11.1481 7.03418C11.6976 7.5837 12.0002 8.31424 12.0002 9.09129C12.0001 9.69378 12.4886 10.1823 13.091 10.1823C13.0911 10.1823 13.0911 10.1823 13.0911 10.1823C13.6935 10.1823 14.182 9.69392 14.1821 9.09143C14.1821 7.73154 13.6526 6.45298 12.691 5.49139Z" fill="#F16520"/>
+                                  <path d="M23.6805 22.1378L16.242 14.6993C17.4571 13.1535 18.1826 11.2055 18.1826 9.09127C18.1825 4.07836 14.1042 0 9.09122 0C9.09108 0 9.09136 0 9.09122 0C6.66295 0 4.37972 0.945703 2.66278 2.66269C0.945609 4.37986 0 6.66286 0 9.09127C0 14.1042 4.07831 18.1825 9.09122 18.1825C11.2054 18.1825 13.1535 17.4571 14.6993 16.2421L22.1377 23.6805C22.3507 23.8935 22.6299 24 22.9091 24C23.1883 24 23.4675 23.8935 23.6804 23.6805C24.1065 23.2545 24.1065 22.5637 23.6805 22.1378ZM9.09122 16.0007C5.28141 16.0007 2.18184 12.9012 2.18184 9.09127C2.18184 7.24566 2.90053 5.51053 4.20553 4.20553C5.51053 2.90044 7.24561 2.18184 9.09122 2.18184C12.9012 2.18184 16.0007 5.28141 16.0007 9.09131C16.0007 12.9012 12.9012 16.0007 9.09122 16.0007Z" fill="#1D7460"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_49_889">
+                                  <rect width="24" height="24" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                                  </svg>                                                              
+                          </button>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div id="mobile-nav-toggle" aria-controls="primary-navigation" class="text-green-800 flex items-center justify-center h-[32px] cursor-pointer lg:hidden">
+              <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentcolor"><path d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"/>
+              </svg>
+          </div>
+      </div>
+      <div id="search-section" class="hidden bg-white absolute left-0 right-0 top-[96px] z-10">
+          <div class="max-w-screen-3xl  px-4 md:px-8 lg:px-12 xl:px-16  mx-auto">
+              <div class="flex items-center justify-between py-[7px]">
+                  <div class="flex items-center gap-4">
+                      <label for="search">
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_50_287)">
+                              <path d="M21.1519 9.15223C19.549 7.54957 17.4183 6.66691 15.1517 6.66699C14.1475 6.66699 13.3335 7.48106 13.3335 8.4852C13.3337 9.48941 14.1476 10.3034 15.1518 10.3034C16.4469 10.3034 17.6645 10.8076 18.5804 11.7236C19.4962 12.6394 20.0005 13.857 20.0005 15.1521C20.0004 16.1562 20.8144 16.9704 21.8186 16.9704C21.8187 16.9704 21.8187 16.9704 21.8187 16.9704C22.8227 16.9704 23.6368 16.1564 23.6369 15.1523C23.637 12.8858 22.7545 10.7549 21.1519 9.15223Z" fill="#F16520"/>
+                              <path d="M39.4674 36.8963L27.0701 24.4989C29.0952 21.9224 30.3043 18.6758 30.3043 15.1521C30.3042 6.79727 23.507 0 15.152 0C15.1518 0 15.1523 0 15.152 0C11.1049 0 7.29953 1.57617 4.43797 4.43781C1.57602 7.29977 0 11.1048 0 15.1521C0 23.507 6.79719 30.3042 15.152 30.3042C18.6757 30.3042 21.9224 29.0952 24.4988 27.0702L36.8961 39.4675C37.2511 39.8225 37.7165 40 38.1818 40C38.6471 40 39.1125 39.8226 39.4673 39.4674C40.1776 38.7575 40.1776 37.6062 39.4674 36.8963ZM15.152 26.6679C8.80234 26.6679 3.63641 21.502 3.63641 15.1521C3.63641 12.0761 4.83422 9.18422 7.00922 7.00922C9.18422 4.83406 12.076 3.63641 15.152 3.63641C21.502 3.63641 26.6679 8.80234 26.6679 15.1522C26.6679 21.502 21.502 26.6679 15.152 26.6679Z" fill="#1D7460"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_50_287">
+                              <rect width="40" height="40" fill="white"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                                                
+                      </label>
+                      <input type="text" id="search" placeholder="Sbě" class="text-5xl text-black placeholder:text-black font-bold border-none outline-none">
+                  </div>
+                  <div id="close-search" class="">
+                      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 34L34 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
+                          <path d="M34 34L2 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
+                          </svg>                                            
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="update" class="bg-orange">
+          <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[8px] flex justify-between  items-center gap-4">
+              <div class="flex items-center gap-2">
+                  <div class="">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_50_36)">
+                          <path d="M12.8064 19.9675H7.23994C6.44274 19.9675 5.6502 19.6691 5.15136 19.0724L0.974206 14.8952C0.37747 14.2985 0.0791016 13.6038 0.0791016 12.8066V7.24019C0.0791016 6.44298 0.37747 5.65044 0.974206 5.15161L5.15136 0.974451C5.7481 0.377714 6.44274 0.0793457 7.23994 0.0793457H12.7085C13.5057 0.0793457 14.2982 0.377714 14.7971 0.974451L18.9742 5.15161C19.6688 5.74834 19.9672 6.44298 19.9672 7.24019V12.7087C19.9672 13.5059 19.6688 14.2985 19.0721 14.7973L14.895 18.9745C14.2982 19.6691 13.6036 19.9675 12.8064 19.9675ZM7.23994 2.06536C7.03947 2.06536 6.74111 2.16326 6.5453 2.36373L2.36815 6.54088C2.16768 6.74135 2.06978 7.03972 2.06978 7.23552V12.7041C2.06978 13.0024 2.16768 13.2029 2.36815 13.3987L6.5453 17.5758C6.74577 17.8742 7.04414 17.9721 7.23994 17.9721H12.7085C13.0068 17.9721 13.2073 17.8742 13.4031 17.6738L17.5803 13.4966C17.7807 13.2961 17.8786 13.1003 17.8786 12.802V7.24019C17.8786 6.94182 17.7807 6.74135 17.5803 6.54555L13.4031 2.36839C13.3052 2.16792 13.0068 2.07002 12.8064 2.07002H7.23994V2.06536Z" fill="white"/>
+                          <path d="M10.0233 12.0141C9.42654 12.0141 9.03027 11.6178 9.03027 11.0211V6.04672C9.03027 5.44998 9.42654 5.05371 10.0233 5.05371C10.62 5.05371 11.0163 5.44998 11.0163 6.04672V11.0211C11.0163 11.6132 10.62 12.0141 10.0233 12.0141Z" fill="white"/>
+                          <path d="M10.0233 14.9977C9.42654 14.9977 9.03027 14.6015 9.03027 14.0047C9.03027 13.408 9.42654 13.0117 10.0233 13.0117C10.62 13.0117 11.0163 13.408 11.0163 14.0047C11.0163 14.6015 10.62 14.9977 10.0233 14.9977Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_50_36">
+                          <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <p class="text-white text-xs sm:text-sm lg:text-base"><span class="font-bold  text-xs sm:text-sm lg:text-base">Aktuální informace:</span> Sběrný dvůr v Kyjově nebude otevřen 5. - 6. července 202</p>
+              </div>
+              <div id="update-close" class="">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.59961 14.3999L14.3996 1.5999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M14.4004 14.3999L1.2004 1.19989" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>                        
+              </div>
+          </div>
+      </div>
+      <div id="dropdown-section" class="bg-green-600 hidden transition-all ease-in duration-300">
+          <ul class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[14px] flex items-center gap-[64px] justify-between text-white font-bold relative">
+              <div class="absolute -top-2 left-[40%] xs:left-[30%] sm:left-[18%] rotate-45 w-4 h-4 bg-green-600"></div>
+              <li>
+                  <a class="flex items-center gap-2" href="./subpagetwo.html">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Odpad na sběrný dvůr</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="./subpageone.html">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Uložení odpadu na skládce</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Svoz komunálního a BIO odpadu</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Potřebuji přistavit kontejner</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej nádob na odpady</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej kompostu</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej recyklátu</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      </header>
+      <!-- header end -->
+
+      <!-- Hero Section Starts-->
+      <section class="overflow-hidden">
+      <main class="flex flex-col md:flex-row items-stretch gap-0 md:gap-[18px] bg-green-800 mt-[85px] xs:mt-[96px] lg:mt-[96px] relative z-0">
+          <div class="flex-1 contents md:flex items-center lg:justify-center relative pt-[4rem] pb-[78px]">
+              <div class="min-h-[50vh] md:min-h-[auto] max-w-full md:max-w-[710px] ml-0 xl:ml-auto pl-4 md:pl-8 lg:pl-12 xl:pl-16 flex flex-col gap-8 items-start justify-center">
+                  <div class="flex items-center gap-2">
+                      <a class="text-xs sm:text-sm lg:text-base text-white leading-[140%] underline" href="">Jsem občan</a>
+                      <div class="">
+                          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </svg>                                
+                      </div>
+                      <a class="text-xs sm:text-sm lg:text-base text-white leading-[140%]" href="">Odpad na sběrný dvůr</a>
+                  </div>
+                  <h1 class="max-w-[620px] font-barlow font-bold text-4xl md:text-5xl lg:text-6xl xl:text-[62px] 2xl:text-[72px] xl:leading-[68px] 2xl:leading-[78px] text-white">Odpad na sběrný dvůr</h1>
+              </div>
+              <div class="absolute left-0 top-0 -z-10">
+                  <img class="w-full h-full object-cover" src="./assets/images/frame one.png" alt="frame one">
+              </div>
+              <div class="absolute right-0 bottom-[50%]  md:-right-1/2 -translate-x-0 md:-translate-x-1/2 md:-bottom-1/2 -z-10">
+                  <img class="w-full h-full object-cover" src="./assets/images/Frame three.png" alt="frame three">
+              </div>
+          </div>
+          <div class="flex-1 overflow-hidden rounded-tl-[48px]">
+              <img class="w-full h-full object-cover" src="./assets/images/subpagetwo/hero.png" alt="hero">
+          </div>
+      </main>
+      </section>
+      <!-- Hero Section Ends -->
+
+      <!-- info starts -->
+      <div class="bg-transparent max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-y-6 lg:grid-cols-3 bg-white rounded-tl-[24px] rounded-br-[24px] py-12 mt-[-40px] md:mt-[-75px] relative shadow-md">
+                  <a class="flex items-center justify-start md:justify-center px-8 gap-4" href="callto:518 611 688">
+                        <div class="">
+                              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_25_2630)">
+                                    <path d="M25.5169 40.1075C25.4173 40.1075 25.3235 40.1075 25.2239 40.1075C22.2065 40.0782 19.1129 39.1817 16.0134 37.4299C13.5702 36.0471 11.1094 34.1253 8.70129 31.7172C3.23476 26.2507 0.439974 20.7197 0.387243 15.2766C0.357947 11.8315 0.744647 6.82198 4.45345 3.10731C5.87135 1.68941 7.62908 0.904296 9.4161 0.886719H9.46297C9.46883 0.886719 9.46883 0.886719 9.47469 0.886719C11.6133 0.886719 13.5995 2.05854 14.66 3.94516L15.9373 6.20677L15.9548 6.24193C16.5818 7.54264 16.8864 8.53869 16.945 9.45856C17.0271 10.7358 16.6169 11.8432 15.7146 12.7455L12.0058 16.5891C12.4804 17.9601 13.8573 21.3642 16.6111 24.1239C19.359 26.8659 22.6694 28.1725 24.0287 28.6236L27.7433 24.7684C29.8585 22.6591 32.3544 23.538 34.2879 24.5399L34.3231 24.5574L36.5495 25.8054C38.442 26.8659 39.6138 28.8639 39.608 31.0083V31.0552C39.5963 32.8363 38.8053 34.5999 37.3874 36.0178C35.782 37.6232 33.7489 38.7716 31.3525 39.4219C29.6534 39.879 27.7433 40.1075 25.5169 40.1075ZM9.48055 3.23621H9.47469H9.43953C8.27943 3.24207 7.0959 3.78697 6.11743 4.76544C3.02969 7.85318 2.70744 12.2299 2.73674 15.2532C2.77775 20.0577 5.34403 25.0437 10.3594 30.0591C15.4275 35.1272 20.437 37.717 25.2415 37.7638C28.2589 37.7931 32.6239 37.465 35.7293 34.3597C36.7077 33.3812 37.2526 32.2035 37.2585 31.0376V31.0024C37.2585 29.7076 36.5437 28.5006 35.3953 27.8502L33.1864 26.6081C31.001 25.4773 30.1397 25.6824 29.4014 26.4148L24.7435 31.2544L24.0873 31.0903C23.8763 31.0376 18.943 29.7662 14.9529 25.782C10.9805 21.7978 9.60359 16.8 9.545 16.5891L9.37508 15.9446L14.0506 11.0991C14.7303 10.4195 14.9354 9.54645 13.8573 7.2907L12.6269 5.0994C11.9765 3.94516 10.7754 3.23621 9.48055 3.23621Z" fill="#1D7460"/>
+                                    <path d="M39.608 19.2496H37.2644C37.2644 10.4199 30.0811 3.2367 21.2515 3.2367V0.893066C26.1555 0.893066 30.7666 2.80313 34.2352 6.27171C37.6979 9.73443 39.608 14.3455 39.608 19.2496Z" fill="#F16520"/>
+                                    <path d="M27.1106 19.2495H24.7669C24.7669 17.3101 23.1908 15.734 21.2515 15.734V13.3904C24.4798 13.3904 27.1106 16.0153 27.1106 19.2495Z" fill="#F16520"/>
+                                    <path d="M33.3563 19.2497H31.0127C31.0127 13.8651 26.6301 9.48255 21.2456 9.48255V7.13892C27.925 7.13892 33.3563 12.5703 33.3563 19.2497Z" fill="#F16520"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_25_2630">
+                                    <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                              </svg>                                    
+                        </div>
+                        <div class="flex flex-col font-bold text-base md:text-lg lg:text-2xl leading-[140%] text-green-800">
+                              <p>518 611 688</p>
+                              <span class="font-normal text-sm md:text-base lg:text-lg text-black">Po - Pá: 7:00 - 18:00</span>
+                        </div>
+                  </a>
+                  <a class="flex items-center justify-start md:justify-center px-8 gap-4" href="callto:518 611 688">
+                        <div class="">
+                              <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15.8454L3.69619 2.99219H3.01208V4.99246L21 18.3437L38.9879 4.99246V2.99219H38.3038L21 15.8454Z" fill="#F16520" stroke="#F16520" stroke-width="0.5"/>
+                                    <path d="M36.7747 1H5.22535C2.89135 1 1 2.88781 1 5.21745V25.7825C1 28.1042 2.89135 30 5.22535 30H36.7747C39.1006 30 41 28.1122 41 25.7825V5.21745C41 2.88781 39.1006 1 36.7747 1ZM38.9879 5.00055V5.12105V25.7825C38.9879 27.0036 37.998 27.9917 36.7747 27.9917H5.22535C4.00201 27.9917 3.01207 27.0036 3.01207 25.7825V5.00055V3.00831H3.69618H4.59759H38.3038H38.9879V5.00055Z" fill="#1D7460" stroke="#1D7460" stroke-width="0.5"/>
+                              </svg>                                                                       
+                        </div>
+                        <div class="flex flex-col font-bold text-base md:text-lg lg:text-2xl leading-[140%] text-green-800">
+                              <p>info@ekor.cz</p>
+                              <span class="font-normal text-sm md:text-base lg:text-lg text-black">Odpovídáme do 24 hodin</span>
+                        </div>
+                  </a>
+                  <a class="flex items-center justify-start md:justify-center px-8 gap-4" href="callto:518 611 688">
+                        <div class="">
+                              <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_25_2652)">
+                                    <path d="M3.5 33.1112L4.53125 25.9327C4.75781 24.3634 5.5 22.8795 6.63281 21.7608L27.2578 1.25082C28.9297 -0.411731 31.6563 -0.411731 33.3359 1.25082L35.5469 3.44942C36.3516 4.25739 36.7969 5.3295 36.7969 6.47154C36.7969 7.61357 36.3516 8.68568 35.5391 9.49365L14.9141 30.0036C13.7891 31.1223 12.2969 31.8682 10.7188 32.0934L3.5 33.1112ZM30.2891 2.3307C29.7891 2.3307 29.2891 2.51715 28.9063 2.89783L8.28125 23.4078C7.50781 24.1769 7 25.1869 6.84375 26.2668L6.25781 30.3687L10.3828 29.7861C11.4609 29.6307 12.4844 29.1257 13.2578 28.3566L33.8828 7.84664C34.25 7.4815 34.4531 6.99205 34.4531 6.47154C34.4531 5.95102 34.25 5.46158 33.8828 5.09644L31.6719 2.89783C31.2891 2.51715 30.7891 2.3307 30.2891 2.3307Z" fill="#1D7460"/>
+                                    <path d="M9.02198 21.0251L7.36472 22.6731L13.9441 29.2157L15.6013 27.5677L9.02198 21.0251Z" fill="#1D7460"/>
+                                    <path d="M24.4898 5.64251L22.8326 7.29053L29.4119 13.8332L31.0692 12.1852L24.4898 5.64251Z" fill="#1D7460"/>
+                                    <path d="M40 36.6692H0V38.9999H40V36.6692Z" fill="#F16520"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_25_2652">
+                                    <rect width="40" height="39" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                              </svg>                                                                         
+                        </div>
+                        <div class="flex flex-col font-bold text-base md:text-lg lg:text-2xl leading-[140%] text-green-800">
+                              <p>Kontaktní formulář</p>
+                              <span class="font-normal text-sm md:text-base lg:text-lg text-black">Odpovídáme do 24 hodin</span>
+                        </div>
+                  </a>
+            </div>
+      </div>
+      <!-- info ends -->
+      
+      <!-- Map starts-->
+      <section class="bg-white pt-10 pb-12">
+            <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col lg:flex-row gap-12 lg:gap-10 justify-between items-center">
+                  <div class="flex flex-col gap-3 sm:gap-4 w-full lg:w-auto">
+                        <h1 class="font-extrabold font-inter text-green-800 text-2xl md:text-3xl lg:text-[52px] ">Kde sídlíme</h1>
+                        <h3 class="text-green-800 font-extrabold font-inter text-base  md:text-lg lg:text-2xl">EKOR, s.r.o.</h3>
+                        <div class="flex flex-col gap-3">
+                              <div class="flex gap-10 items-center text-sm md:text-base lg:text-xl font-inter text-black">
+                                    <span class="flex gap-2 items-center font-bold">
+                                    <img src="./public/icon/adress.svg" alt="">Adresa</span>
+                                    <p class="leading-[130%]">Havlíčkova 1398/49a, 697 01 Kyjov</p>
+                              </div>
+
+                              <div class="flex gap-20 items-center text-sm md:text-base lg:text-xl font-inter text-black">
+                                    <span class="flex gap-2 items-center font-bold">
+                                          <img src="./public/icon/adress-2.svg" alt="">IČ</span>
+                                          <p class="leading-[150%]">7948465465</p>
+                              </div>
+
+                              <div class="flex gap-16 items-center text-sm md:text-base lg:text-xl font-inter text-black ">
+                                    <span class="flex gap-2 items-center font-bold">
+                                    <img src="./public/icon/adress-2.svg" alt="">DIČ</span>
+                                    <p class="leading-[150%]">CZ7948465465</p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="flex-1 w-full lg:w-auto">
+                        <img class="w-full h-full object-cover object-center" src="./public/icon/map.svg" alt="">
+                  </div>  
+            </div>
+      </section>
+      <!-- Map ends -->
+
+      <!-- Table -->
+      <section class="bg-grey-200 pt-10 md:pt-14 pb-10 md:pb-16 lg:pb-20">
+            <h1 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800 text-center pb-12">Tabulátory a kontakt</h1>
+            <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
+                  <div class="bg-white shadow-md rounded-tl-[24px] pt-8 md:pt-0">
+                        <!-- Mobile tab -->
+                          <div class="relative md:hidden">
+                            <div class="mobile-btn m-auto max-w-48 py-2 px-2 border border-green-800 flex justify-around items-center text-lg font-inter cursor-pointer">
+                              <p>Select Option</p>
+                              <img src="./public/icon/keyboard_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </div>
+                            <ul class="mobileTab-container border-2 border-green-100 bg-green-100 m-auto max-w-48 mt-2 hidden absolute inset-0 top-12 z-10">
+                              <li data-tab="tab1"class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white">
+                                <h4 class="text-green-800 font-bold font-inter text-base">Možnost číslo 1</h4>
+                          </li>
+                              <li data-tab="tab2"class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white">
+                                <h4 class="text-green-800 font-bold font-inter text-base">Možnost číslo 1</h4>
+                          </li>
+                              <li data-tab="tab3"class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white">
+                                <h4 class="text-green-800 font-bold font-inter text-base">Možnost číslo 1</h4>
+                          </li>
+                              <li data-tab="tab4"class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white">
+                                <h4 class="text-green-800 font-bold font-inter text-base">Možnost číslo 1</h4>
+                          </li>
+                            </ul>
+                          </div>
+                            <div class="flex flex-col">
+                                  <ul class="bg-green-100 md:flex justify-between tabs hidden rounded-tl-[24px]">
+                                        <li data-tab="tab1" class="cursor-pointer w-full py-4 text-center btn-active rounded-tl-[24px]">
+                                              <h4 class="text-green-800 font-bold font-inter text-base lg:text-lg xl:text-xl leading-[140%]">Správa společnosti</h4>
+                                              <p class="text-sm lg:text-base xl:text-lg font-inter leading-[140%]">tabulátor aktivní</p>
+                                        </li>
+                                        <li data-tab="tab2" class="cursor-pointer w-full py-4 text-center">
+                                              <h4 class="text-green-800 font-bold font-inter text-sm lg:text-base xl:text-xl leading-[140%]">Skládka Těmice</h4>
+                                              <p class="text-sm lg:text-base xl:text-lg font-inter leading-[140%]">tabulátor aktivní</p>
+                                        </li>
+                                        <li data-tab="tab3" class="cursor-pointer w-full py-4 text-center">
+                                              <h4 class="text-green-800 font-bold font-inter text-sm lg:text-base xl:text-xl leading-[140%]">Dotříďovací linka Těmice</h4>
+                                              <p class="text-sm lg:text-base xl:text-lg font-inter leading-[140%]">tabulátor aktivní</p>
+                                        </li>
+                                        <li data-tab="tab4" class="cursor-pointer w-full py-4 text-center">
+                                              <h4 class="text-green-800 font-bold font-inter text-sm lg:text-base xl:text-xl leading-[140%]">Kompostárna Kyjov</h4>
+                                              <p class="text-sm lg:text-base xl:text-lg font-inter leading-[140%]">tabulátor aktivní</p>
+                                        </li>
+                                  </ul>
+                                  <div class="px-4 lg:px-10 py-8 md:py-10 lg:py-14">
+                                  <div id="tab1" class="tab-container active hidden overflow-x-scroll">
+                                    <table class="min-w-[600px] w-full text-left">
+                                          <thead>
+                                                <tr class="border-t-2 border-b-2 border-grey-400">
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Jemo</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Funkce</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Telefon</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Mobile</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Email</th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black c align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter text-black pl-3 md:pl-6 py-[9px] align-top">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter pl-3 md:pl-6 py-[9px] text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                          </tbody>
+                                    </table>
+                                  </div>
+                                  <div id="tab2" class="tab-container hidden overflow-x-scroll">
+                                    <table class="min-w-[600px] w-full text-left">
+                                          <thead>
+                                                <tr class="border-t-2 border-b-2 border-grey-400">
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Jemo</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Funkce</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Telefon</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Mobile</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Email</th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black c align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter text-black pl-3 md:pl-6 py-[9px] align-top">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter pl-3 md:pl-6 py-[9px] text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                          </tbody>
+                                    </table>
+                                  </div>
+                                  <div id="tab3" class="tab-container hidden overflow-x-scroll">
+                                    <table class="min-w-[600px] w-full text-left">
+                                          <thead>
+                                                <tr class="border-t-2 border-b-2 border-grey-400">
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Jemo</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Funkce</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Telefon</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Mobile</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Email</th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black c align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter text-black pl-3 md:pl-6 py-[9px] align-top">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter pl-3 md:pl-6 py-[9px] text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                          </tbody>
+                                    </table>
+                                  </div>
+                                  <div id="tab4" class="tab-container hidden overflow-x-scroll">
+                                    <table class="min-w-[600px] w-full text-left">
+                                          <thead>
+                                                <tr class="border-t-2 border-b-2 border-grey-400">
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Jemo</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Funkce</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Telefon</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Mobile</th>
+                                                      <th class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%]">Email</th>
+                                                </tr>
+                                          </thead>
+                                          <tbody>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black c align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter text-black pl-3 md:pl-6 py-[9px] align-top">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl font-inter pl-3 md:pl-6 py-[9px] text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-400 bg-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Ing. František Svoboda</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">ředitel</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            svoboda@ekor.cz
+                                                      </td>
+                                                </tr>
+                                                <tr class="border-y-2 border-grey-200">
+                                                      <td class="pl-3 md:pl-6 py-[9px] text-xs md:text-sm lg:text-base 2xl:text-xl font-bold font-inter text-black leading-[150%] align-top">Miroslav Holý</td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>jednatel,</p>
+                                                            <p>vedoucí provozu</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black">
+                                                            <p>518 611 688 kl. 21</p>
+                                                            <p>518 611 688 kl. 22</p>
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-inter text-black align-top">
+                                                            603 142 210
+                                                      </td>
+                                                      <td class="text-xs md:text-sm lg:text-base 2xl:text-xl pl-3 md:pl-6 py-[9px] font-bold font-inter text-green-800 align-top">
+                                                            holy@ekor.cz
+                                                      </td>
+                                                </tr>
+                                          </tbody>
+                                    </table>
+                                  </div>
+                                  </div>
+                            </div>
+                  </div>
+            </div>
+      </section>
+      <!-- Table ends -->
+
+      <!-- Contact Form starts-->
+      <section class="bg-white py-10 lg:py-14">
+            <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
+                  <div class="max-w-[608px] flex flex-col gap-6 mx-auto">
+                        <h1 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800 text-center">
+                              Kontakt formulář</h1>
+                            <p class="text-sm md:text-base lg:text-xl">
+                              Máte dotaz? Napište nám přes kontaktní formulář, odpovíme vám do jednoho pracovního dne.
+                            </p>
+                            <form action="" class="flex flex-col gap-3">
+                             <div class="flex flex-col gap-[1px]">
+                              <label class="text-sm md:text-base lg:text-lg leading-[140%] text-black font-bold font-inter" for="">Jméno<span class="text-orange">*</span></label>
+                              <input required class="border border-grey-100 text-base md:text-lg lg:text-xl text-black leading-[150%] font-inter p-2 rounded-lg focus:border-green-800 focus:ring-1 focus:ring-green-800 focus:outline-none " type="text" name="" id="" placeholder="Ondrej Nový">
+                             </div>
+                             <div class="flex flex-col gap-[1px]">
+                              <label class="text-sm md:text-base lg:text-lg leading-[140%] text-black font-bold font-inter" for="">Email<span class="text-orange">*</span></label>
+                              <input required class="border border-grey-100 text-base md:text-lg lg:text-xl text-black leading-[150%] font-inter p-2 rounded-lg focus:border-green-800 focus:ring-1 focus:ring-green-800 focus:outline-none " type="email" name="" id="" placeholder="Ondrej Nový">
+                             </div>
+                             <div class="flex flex-col gap-1">
+                              <label class="text-sm md:text-base lg:text-lg leading-[140%] text-black font-bold font-inter" for="">Telefon</label>
+                              <input class="border border-grey-100 text-base md:text-lg lg:text-xl text-black leading-[150%] font-inter p-2 rounded-lg focus:border-green-800 focus:ring-1 focus:ring-green-800 focus:outline-none " type="text" name="" id="" placeholder="Ondrej Nový">
+                             </div>
+                             <div class="flex flex-col gap-[5px]">
+                              <label class="text-sm md:text-base lg:text-lg leading-[140%] text-black font-bold font-inter" for="">Zpráva<span class="text-orange">*</span></label>
+                              <textarea required class="border h-[120px] border-grey-100 text-base md:text-lg lg:text-xl text-black leading-[150%] font-inter p-2 rounded-lg focus:border-green-800 focus:ring-1 focus:ring-green-800 focus:outline-none " type="text" name="" id="" placeholder="Popište nám, co potřebujete" name="" id=""></textarea>
+                             </div>
+                             <div class="flex flex-col md:flex-row items-center justify-center md:justify-around gap-4">
+                              <div class="flex items-center gap-2">
+                                    <input type="checkbox" id="accept" class="appearance-none h-6 w-6 border-2 border-green-800 rounded-[4px] checked:bg-white checked:border-green-800 transition duration-200 relative"/>
+                                    <label for="accept" class="text-sm md:text-lg font-inter">Souhlasím se <span class="text-green-800 font-bold">zpracováním osobních údajů <span class="text-orange">*</span></span></label>
+                              </div>
+                              <button class="w-32 h-12 bg-orange text-white rounded-tl-lg rounded-br-lg m-auto md:mr-0 flex justify-center items-center font-bold font-inter">Odeslat</button>
+                             </div>
+                            </form>
+                  </div>
+            </div>
+      </section>
+      <!-- Contact Form ends -->
+
+      <!-- Footer starts-->
+      <footer class="text-white">
+      <div class="bg-green-600">
+        <div
+          class="max-w-7xl m-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-inter items-center"
+        >
+          <div class="w-20 h-20 overflow-hidden">
+            <img src="./public/imgaes/logo (2).png" alt="" />
+          </div>
+          <ul>
+            <h1 class="font-bold text-xl">Menu</h1>
+            <li class="list-none text-lg font-normal">
+              <a href="#">Jsem občan</a>
+            </li>
+            <li class="list-none text-lg"><a href="#">Jsem podnikatel</a></li>
+            <li class="list-none text-lg">
+              <a href="#">Jak a proč třídit</a>
+            </li>
+            <li class="list-none text-lg"><a href="#">O EKORu</a></li>
+          </ul>
+          <ul>
+            <h1 class="font-bold text-xl">Důležité odkazy</h1>
+            <li class="list-none text-lg font-normal">
+              <a href="#">Aktuality</a>
+            </li>
+            <li class="list-none text-lg"><a href="#">Dokumenty</a></li>
+            <li class="list-none text-lg"><a href="#">GDPR</a></li>
+            <li class="list-none text-lg"><a href="#">Kontakty</a></li>
+          </ul>
+          <ul class="">
+            <h1 class="font-bold text-xl">S společnosti</h1>
+            <li class="list-none text-lg font-normal">
+              <a href="#">EKOR, s. r. o.</a>
+            </li>
+            <li class="list-none text-lg">
+              <a href="#">Havlíčkova 1398/49a, 697 01 Kyjov</a>
+            </li>
+            <li class="list-none text-lg"><a href="#">IČ: 607000262</a></li>
+            <li class="list-none text-lg">
+              <a href="#">DIČ: CZ607000262</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-green-800">
+        <div
+          class="max-w-7xl m-auto flex gap-4 items-center justify-center md:justify-between text-white p-4 text-lg flex-wrap font-inter"
+        >
+          <p class="">© 2024 EKOR s. r. o.</p>
+          <div class="flex items-center gap-3">
+            Vyrobila <img src="./public/imgaes/activemedia 1.png" alt="" />
+          </div>
+          <svg
+            class="cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+            />
+          </svg>
+        </div>
+      </div>
+      </footer>
+      <!-- footer ends -->
+
+      <script src="./index.js"></script>
+      <script src="./tab.js"></script>
+  </body>
+</html>
