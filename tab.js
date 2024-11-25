@@ -21,13 +21,16 @@ for (btn of tabBtn) {
 const mobileBtn= document.querySelector('.mobile-btn');
 const mobileTabContainer= document.querySelector('.mobileTab-container');
 const mobileTabs= mobileTabContainer.querySelectorAll('li');
-console.log(mobileTabs)
+const selectText= document.querySelector('.select');
+
 mobileBtn.addEventListener('click', function(){
   mobileTabContainer.classList.toggle('hidden');
 })
 
 for(mobileTab of mobileTabs){
    mobileTab.addEventListener('click',function(){
+    selectText.textContent=this.textContent
+    mobileTabContainer.classList.add('hidden')
     for (tabContent of tabContainer) {
       tabContent.classList.remove("active");
     }

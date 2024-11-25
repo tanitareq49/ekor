@@ -13,233 +13,233 @@
 <body class="font-inter">
     <!-- Header start -->
     <header class="fixed top-0 w-full  z-50 bg-white">
-        <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[7px] flex justify-between  items-center gap-4 relative">
-            <div class="flex items-center gap-4 md:gap-6 2xl:gap-10 text-black">
-                <a href="#">
-                    <img src="./assets/images/ekor logo 1.png" alt="ekor logo 1">
-                </a>
-                <button id="citizen-dropdown-btn" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800">Jsem občan</button>
-                <a id="entreprenuer" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800" href="#">Jsem podnikatel</a>
-            </div>
-            <div class="absolute top-[49px] left-0 right-0 lg:static  min-h-[100vh] lg:min-h-min -translate-x-full lg:-translate-x-0 transition-transform duration-500 ease-in lg:justify-between" id="primary-navigation" data-visible="false">
-                <ul id="short-nav" class="absolute lg:h-min lg:static top-[47px] left-0 right-0 bottom-0 bg-white border-t-2 border-t-green-800 lg:border-t-0 lg:bg-none flex flex-col lg:flex-row gap-6 lg:gap-8 2xl:gap-14 lg:items-center text-sm md:text-base 2xl:text-lg lg:font-bold text-green-800 pt-12 lg:pt-0 pl-8 lg:pl-0">
-                    <li><a href="#">Jak a proč třídit</a></li>
-                    <li><a href="#">O EKORu</a></li>
-                    <li><a href="./kontackt.html">Kontakty</a></li>
-                    <li class="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-4 2xl:gap-8">
-                        <a class="flex items-center gap-2" href="callto:518 611 688">
-                            <div class="">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.3275 24.0001C15.2675 24.0001 15.2074 24.0001 15.1474 24.0001C13.2998 23.9825 11.4029 23.4313 9.50945 22.3643C8.02225 21.5235 6.52446 20.354 5.06199 18.8913C1.73435 15.5597 0.0316722 12.1821 -0.000120596 8.85395C-0.0177832 6.74472 0.218896 3.6745 2.50444 1.39215C3.39111 0.505355 4.49679 0.0107282 5.62013 0.00366211H5.65193C5.65546 0.00366211 5.65546 0.00366211 5.65899 0.00366211C7.01195 0.00366211 8.26953 0.745602 8.94071 1.93977L9.70727 3.30706L9.71787 3.33179C10.1064 4.13733 10.2937 4.75561 10.3325 5.33503C10.3855 6.15823 10.1206 6.87191 9.54124 7.45133L7.38286 9.68775C7.69373 10.5569 8.50974 12.4859 10.0817 14.0617C11.6396 15.6162 13.5189 16.397 14.3808 16.6938L16.5462 14.4468C17.1326 13.8603 17.8286 13.5812 18.6163 13.613C19.2239 13.6377 19.8668 13.8426 20.7005 14.2736L20.7252 14.2878L22.0676 15.0403C23.2651 15.7116 24.0069 16.9729 24.0034 18.3331V18.3614C23.9963 19.4814 23.5018 20.5872 22.6151 21.4775C21.6225 22.4703 20.3755 23.1734 18.8989 23.5762C17.8497 23.8623 16.684 24.0001 15.3275 24.0001ZM5.65546 1.76665H5.65193H5.63073C4.97721 1.77019 4.30956 2.08109 3.75142 2.63932C1.93924 4.45177 1.75201 7.04503 1.76614 8.83628C1.79087 11.6875 3.32046 14.6481 6.31251 17.6406C9.33282 20.6614 12.3107 22.2089 15.1615 22.2336C16.9454 22.2513 19.5312 22.0605 21.3575 20.2304C21.9157 19.6721 22.223 19.0044 22.2301 18.3508V18.3296C22.2301 17.6124 21.8344 16.9446 21.1951 16.5843L19.8668 15.8388C18.5209 15.1428 18.1288 15.3583 17.7932 15.6904L14.9142 18.6794L14.4197 18.5557C14.2925 18.5239 11.2686 17.7466 8.8312 15.3088C6.40082 12.8746 5.56008 9.81494 5.52475 9.68422L5.39405 9.20019L8.28366 6.20416C8.63691 5.85086 8.73582 5.3739 8.13529 4.1126L7.40053 2.80184C7.04021 2.16235 6.37256 1.76665 5.65546 1.76665Z" fill="currentcolor"/>
-                                    <path d="M23.9995 11.2462H22.2333C22.2333 6.0208 17.9801 1.76701 12.752 1.76701V0.000488281C15.7546 0.000488281 18.5806 1.16993 20.7037 3.29329C22.8267 5.42019 23.9995 8.24309 23.9995 11.2462Z" fill="#F16520"/>
-                                    <path d="M16.4611 11.2461H14.6948C14.6948 10.1756 13.8223 9.3029 12.752 9.3029V7.53638C14.7973 7.53638 16.4611 9.20044 16.4611 11.2461Z" fill="#F16520"/>
-                                    <path d="M20.2303 11.2461H18.4641C18.4641 8.09812 15.903 5.53313 12.752 5.53313V3.7666C16.8744 3.77013 20.2303 7.123 20.2303 11.2461Z" fill="#F16520"/>
-                                    </svg>                                    
-                            </div>
-                            <span>518 611 688</span>
-                        </a>
-                        <div class="">
-                            <button id="open-search">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_49_889)">
-                                    <path d="M12.691 5.49139C11.7293 4.52979 10.4509 4.0002 9.09092 4.00024C8.48839 4.00024 8 4.48868 8 5.09117C8.00009 5.6937 8.48844 6.18209 9.09097 6.18209C9.86806 6.18209 10.5986 6.48462 11.1481 7.03418C11.6976 7.5837 12.0002 8.31424 12.0002 9.09129C12.0001 9.69378 12.4886 10.1823 13.091 10.1823C13.0911 10.1823 13.0911 10.1823 13.0911 10.1823C13.6935 10.1823 14.182 9.69392 14.1821 9.09143C14.1821 7.73154 13.6526 6.45298 12.691 5.49139Z" fill="#F16520"/>
-                                    <path d="M23.6805 22.1378L16.242 14.6993C17.4571 13.1535 18.1826 11.2055 18.1826 9.09127C18.1825 4.07836 14.1042 0 9.09122 0C9.09108 0 9.09136 0 9.09122 0C6.66295 0 4.37972 0.945703 2.66278 2.66269C0.945609 4.37986 0 6.66286 0 9.09127C0 14.1042 4.07831 18.1825 9.09122 18.1825C11.2054 18.1825 13.1535 17.4571 14.6993 16.2421L22.1377 23.6805C22.3507 23.8935 22.6299 24 22.9091 24C23.1883 24 23.4675 23.8935 23.6804 23.6805C24.1065 23.2545 24.1065 22.5637 23.6805 22.1378ZM9.09122 16.0007C5.28141 16.0007 2.18184 12.9012 2.18184 9.09127C2.18184 7.24566 2.90053 5.51053 4.20553 4.20553C5.51053 2.90044 7.24561 2.18184 9.09122 2.18184C12.9012 2.18184 16.0007 5.28141 16.0007 9.09131C16.0007 12.9012 12.9012 16.0007 9.09122 16.0007Z" fill="#1D7460"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_49_889">
-                                    <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                    </svg>                                                              
-                            </button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="mobile-nav-toggle" aria-controls="primary-navigation" class="text-green-800 flex items-center justify-center h-[32px] cursor-pointer lg:hidden">
-                <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentcolor"><path d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"/>
-                </svg>
-            </div>
-        </div>
-        <div id="search-section" class="hidden bg-white absolute left-0 right-0 top-[96px] z-10">
-            <div class="max-w-screen-3xl  px-4 md:px-8 lg:px-12 xl:px-16  mx-auto">
-                <div class="flex items-center justify-between py-[7px]">
-                    <div class="flex items-center gap-4">
-                        <label for="search">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_50_287)">
-                                <path d="M21.1519 9.15223C19.549 7.54957 17.4183 6.66691 15.1517 6.66699C14.1475 6.66699 13.3335 7.48106 13.3335 8.4852C13.3337 9.48941 14.1476 10.3034 15.1518 10.3034C16.4469 10.3034 17.6645 10.8076 18.5804 11.7236C19.4962 12.6394 20.0005 13.857 20.0005 15.1521C20.0004 16.1562 20.8144 16.9704 21.8186 16.9704C21.8187 16.9704 21.8187 16.9704 21.8187 16.9704C22.8227 16.9704 23.6368 16.1564 23.6369 15.1523C23.637 12.8858 22.7545 10.7549 21.1519 9.15223Z" fill="#F16520"/>
-                                <path d="M39.4674 36.8963L27.0701 24.4989C29.0952 21.9224 30.3043 18.6758 30.3043 15.1521C30.3042 6.79727 23.507 0 15.152 0C15.1518 0 15.1523 0 15.152 0C11.1049 0 7.29953 1.57617 4.43797 4.43781C1.57602 7.29977 0 11.1048 0 15.1521C0 23.507 6.79719 30.3042 15.152 30.3042C18.6757 30.3042 21.9224 29.0952 24.4988 27.0702L36.8961 39.4675C37.2511 39.8225 37.7165 40 38.1818 40C38.6471 40 39.1125 39.8226 39.4673 39.4674C40.1776 38.7575 40.1776 37.6062 39.4674 36.8963ZM15.152 26.6679C8.80234 26.6679 3.63641 21.502 3.63641 15.1521C3.63641 12.0761 4.83422 9.18422 7.00922 7.00922C9.18422 4.83406 12.076 3.63641 15.152 3.63641C21.502 3.63641 26.6679 8.80234 26.6679 15.1522C26.6679 21.502 21.502 26.6679 15.152 26.6679Z" fill="#1D7460"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_50_287">
-                                <rect width="40" height="40" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>                                                
-                        </label>
-                        <input type="text" id="search" placeholder="Sbě" class="text-5xl text-black placeholder:text-black font-bold border-none outline-none">
-                    </div>
-                    <div id="close-search" class="">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 34L34 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
-                            <path d="M34 34L2 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
-                            </svg>                                            
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="update" class="bg-orange">
-            <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[8px] flex justify-between  items-center gap-4">
-                <div class="flex items-center gap-2">
-                    <div class="">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_50_36)">
-                            <path d="M12.8064 19.9675H7.23994C6.44274 19.9675 5.6502 19.6691 5.15136 19.0724L0.974206 14.8952C0.37747 14.2985 0.0791016 13.6038 0.0791016 12.8066V7.24019C0.0791016 6.44298 0.37747 5.65044 0.974206 5.15161L5.15136 0.974451C5.7481 0.377714 6.44274 0.0793457 7.23994 0.0793457H12.7085C13.5057 0.0793457 14.2982 0.377714 14.7971 0.974451L18.9742 5.15161C19.6688 5.74834 19.9672 6.44298 19.9672 7.24019V12.7087C19.9672 13.5059 19.6688 14.2985 19.0721 14.7973L14.895 18.9745C14.2982 19.6691 13.6036 19.9675 12.8064 19.9675ZM7.23994 2.06536C7.03947 2.06536 6.74111 2.16326 6.5453 2.36373L2.36815 6.54088C2.16768 6.74135 2.06978 7.03972 2.06978 7.23552V12.7041C2.06978 13.0024 2.16768 13.2029 2.36815 13.3987L6.5453 17.5758C6.74577 17.8742 7.04414 17.9721 7.23994 17.9721H12.7085C13.0068 17.9721 13.2073 17.8742 13.4031 17.6738L17.5803 13.4966C17.7807 13.2961 17.8786 13.1003 17.8786 12.802V7.24019C17.8786 6.94182 17.7807 6.74135 17.5803 6.54555L13.4031 2.36839C13.3052 2.16792 13.0068 2.07002 12.8064 2.07002H7.23994V2.06536Z" fill="white"/>
-                            <path d="M10.0233 12.0141C9.42654 12.0141 9.03027 11.6178 9.03027 11.0211V6.04672C9.03027 5.44998 9.42654 5.05371 10.0233 5.05371C10.62 5.05371 11.0163 5.44998 11.0163 6.04672V11.0211C11.0163 11.6132 10.62 12.0141 10.0233 12.0141Z" fill="white"/>
-                            <path d="M10.0233 14.9977C9.42654 14.9977 9.03027 14.6015 9.03027 14.0047C9.03027 13.408 9.42654 13.0117 10.0233 13.0117C10.62 13.0117 11.0163 13.408 11.0163 14.0047C11.0163 14.6015 10.62 14.9977 10.0233 14.9977Z" fill="white"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_50_36">
-                            <rect width="20" height="20" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <p class="text-white text-xs sm:text-sm lg:text-base"><span class="font-bold  text-xs sm:text-sm lg:text-base">Aktuální informace:</span> Sběrný dvůr v Kyjově nebude otevřen 5. - 6. července 202</p>
-                </div>
-                <div id="update-close" class="">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.59961 14.3999L14.3996 1.5999" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M14.4004 14.3999L1.2004 1.19989" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                        </svg>                        
-                </div>
-            </div>
-        </div>
-        <div id="dropdown-section" class="bg-green-600 hidden transition-all ease-in duration-300">
-            <ul class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[14px] flex items-center gap-[64px] justify-between text-white font-bold relative">
-                <div class="absolute -top-2 left-[40%] xs:left-[30%] sm:left-[18%] rotate-45 w-4 h-4 bg-green-600"></div>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Odpad na sběrný dvůr</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Uložení odpadu na skládce</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Svoz komunálního a BIO odpadu</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Potřebuji přistavit kontejner</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Prodej nádob na odpady</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Prodej kompostu</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="flex items-center gap-2" href="">
-                    <div class="">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1_5629)">
-                            <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_5629">
-                            <rect width="8" height="12" fill="white"/>
-                            </clipPath>
-                            </defs>
-                            </svg>                            
-                    </div>
-                    <span>Prodej recyklátu</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[7px] flex justify-between  items-center gap-4 relative">
+          <div class="flex items-center gap-4 md:gap-6 2xl:gap-10 text-black">
+              <a href="#">
+                  <img src="./assets/images/ekor logo 1.png" alt="ekor logo 1">
+              </a>
+              <button id="citizen-dropdown-btn" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800">Jsem občan</button>
+              <a id="entreprenuer" class="text-sm sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-bold text-green-800" href="#">Jsem podnikatel</a>
+          </div>
+          <div class="absolute top-[49px] left-0 right-0 lg:static  min-h-[100vh] lg:min-h-min -translate-x-full lg:-translate-x-0 transition-transform duration-500 ease-in lg:justify-between" id="primary-navigation" data-visible="false">
+              <ul id="short-nav" class="absolute lg:h-min lg:static top-[47px] left-0 right-0 bottom-0 bg-white border-t-2 border-t-green-800 lg:border-t-0 lg:bg-none flex flex-col lg:flex-row gap-6 lg:gap-8 2xl:gap-14 lg:items-center text-sm md:text-base 2xl:text-lg lg:font-bold text-green-800 pt-12 lg:pt-0 pl-8 lg:pl-0">
+                  <li><a href="#">Jak a proč třídit</a></li>
+                  <li><a href="#">O EKORu</a></li>
+                  <li><a href="./kontackt.html">Kontakty</a></li>
+                  <li class="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-4 2xl:gap-8">
+                      <a class="flex items-center gap-2" href="callto:518 611 688">
+                          <div class="">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.3275 24.0001C15.2675 24.0001 15.2074 24.0001 15.1474 24.0001C13.2998 23.9825 11.4029 23.4313 9.50945 22.3643C8.02225 21.5235 6.52446 20.354 5.06199 18.8913C1.73435 15.5597 0.0316722 12.1821 -0.000120596 8.85395C-0.0177832 6.74472 0.218896 3.6745 2.50444 1.39215C3.39111 0.505355 4.49679 0.0107282 5.62013 0.00366211H5.65193C5.65546 0.00366211 5.65546 0.00366211 5.65899 0.00366211C7.01195 0.00366211 8.26953 0.745602 8.94071 1.93977L9.70727 3.30706L9.71787 3.33179C10.1064 4.13733 10.2937 4.75561 10.3325 5.33503C10.3855 6.15823 10.1206 6.87191 9.54124 7.45133L7.38286 9.68775C7.69373 10.5569 8.50974 12.4859 10.0817 14.0617C11.6396 15.6162 13.5189 16.397 14.3808 16.6938L16.5462 14.4468C17.1326 13.8603 17.8286 13.5812 18.6163 13.613C19.2239 13.6377 19.8668 13.8426 20.7005 14.2736L20.7252 14.2878L22.0676 15.0403C23.2651 15.7116 24.0069 16.9729 24.0034 18.3331V18.3614C23.9963 19.4814 23.5018 20.5872 22.6151 21.4775C21.6225 22.4703 20.3755 23.1734 18.8989 23.5762C17.8497 23.8623 16.684 24.0001 15.3275 24.0001ZM5.65546 1.76665H5.65193H5.63073C4.97721 1.77019 4.30956 2.08109 3.75142 2.63932C1.93924 4.45177 1.75201 7.04503 1.76614 8.83628C1.79087 11.6875 3.32046 14.6481 6.31251 17.6406C9.33282 20.6614 12.3107 22.2089 15.1615 22.2336C16.9454 22.2513 19.5312 22.0605 21.3575 20.2304C21.9157 19.6721 22.223 19.0044 22.2301 18.3508V18.3296C22.2301 17.6124 21.8344 16.9446 21.1951 16.5843L19.8668 15.8388C18.5209 15.1428 18.1288 15.3583 17.7932 15.6904L14.9142 18.6794L14.4197 18.5557C14.2925 18.5239 11.2686 17.7466 8.8312 15.3088C6.40082 12.8746 5.56008 9.81494 5.52475 9.68422L5.39405 9.20019L8.28366 6.20416C8.63691 5.85086 8.73582 5.3739 8.13529 4.1126L7.40053 2.80184C7.04021 2.16235 6.37256 1.76665 5.65546 1.76665Z" fill="currentcolor"/>
+                                  <path d="M23.9995 11.2462H22.2333C22.2333 6.0208 17.9801 1.76701 12.752 1.76701V0.000488281C15.7546 0.000488281 18.5806 1.16993 20.7037 3.29329C22.8267 5.42019 23.9995 8.24309 23.9995 11.2462Z" fill="#F16520"/>
+                                  <path d="M16.4611 11.2461H14.6948C14.6948 10.1756 13.8223 9.3029 12.752 9.3029V7.53638C14.7973 7.53638 16.4611 9.20044 16.4611 11.2461Z" fill="#F16520"/>
+                                  <path d="M20.2303 11.2461H18.4641C18.4641 8.09812 15.903 5.53313 12.752 5.53313V3.7666C16.8744 3.77013 20.2303 7.123 20.2303 11.2461Z" fill="#F16520"/>
+                                  </svg>                                    
+                          </div>
+                          <span>518 611 688</span>
+                      </a>
+                      <div class="">
+                          <button id="open-search">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_49_889)">
+                                  <path d="M12.691 5.49139C11.7293 4.52979 10.4509 4.0002 9.09092 4.00024C8.48839 4.00024 8 4.48868 8 5.09117C8.00009 5.6937 8.48844 6.18209 9.09097 6.18209C9.86806 6.18209 10.5986 6.48462 11.1481 7.03418C11.6976 7.5837 12.0002 8.31424 12.0002 9.09129C12.0001 9.69378 12.4886 10.1823 13.091 10.1823C13.0911 10.1823 13.0911 10.1823 13.0911 10.1823C13.6935 10.1823 14.182 9.69392 14.1821 9.09143C14.1821 7.73154 13.6526 6.45298 12.691 5.49139Z" fill="#F16520"/>
+                                  <path d="M23.6805 22.1378L16.242 14.6993C17.4571 13.1535 18.1826 11.2055 18.1826 9.09127C18.1825 4.07836 14.1042 0 9.09122 0C9.09108 0 9.09136 0 9.09122 0C6.66295 0 4.37972 0.945703 2.66278 2.66269C0.945609 4.37986 0 6.66286 0 9.09127C0 14.1042 4.07831 18.1825 9.09122 18.1825C11.2054 18.1825 13.1535 17.4571 14.6993 16.2421L22.1377 23.6805C22.3507 23.8935 22.6299 24 22.9091 24C23.1883 24 23.4675 23.8935 23.6804 23.6805C24.1065 23.2545 24.1065 22.5637 23.6805 22.1378ZM9.09122 16.0007C5.28141 16.0007 2.18184 12.9012 2.18184 9.09127C2.18184 7.24566 2.90053 5.51053 4.20553 4.20553C5.51053 2.90044 7.24561 2.18184 9.09122 2.18184C12.9012 2.18184 16.0007 5.28141 16.0007 9.09131C16.0007 12.9012 12.9012 16.0007 9.09122 16.0007Z" fill="#1D7460"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_49_889">
+                                  <rect width="24" height="24" fill="white"/>
+                                  </clipPath>
+                                  </defs>
+                                  </svg>                                                              
+                          </button>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div id="mobile-nav-toggle" aria-controls="primary-navigation" class="text-green-800 flex items-center justify-center h-[32px] cursor-pointer lg:hidden">
+              <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="currentcolor"><path d="M120-240v-66.67h520V-240H120Zm673.33-48L600.67-480.67l192-192L840-625.33 695.33-480.67l145.34 145.34L793.33-288ZM120-448v-66.67h400V-448H120Zm0-205.33V-720h520v66.67H120Z"/>
+              </svg>
+          </div>
+      </div>
+      <div id="search-section" class="hidden bg-white absolute left-0 right-0 top-[96px] z-10">
+          <div class="max-w-screen-3xl  px-4 md:px-8 lg:px-12 xl:px-16  mx-auto">
+              <div class="flex items-center justify-between py-[7px]">
+                  <div class="flex items-center gap-4">
+                      <label for="search">
+                          <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_50_287)">
+                              <path d="M21.1519 9.15223C19.549 7.54957 17.4183 6.66691 15.1517 6.66699C14.1475 6.66699 13.3335 7.48106 13.3335 8.4852C13.3337 9.48941 14.1476 10.3034 15.1518 10.3034C16.4469 10.3034 17.6645 10.8076 18.5804 11.7236C19.4962 12.6394 20.0005 13.857 20.0005 15.1521C20.0004 16.1562 20.8144 16.9704 21.8186 16.9704C21.8187 16.9704 21.8187 16.9704 21.8187 16.9704C22.8227 16.9704 23.6368 16.1564 23.6369 15.1523C23.637 12.8858 22.7545 10.7549 21.1519 9.15223Z" fill="#F16520"/>
+                              <path d="M39.4674 36.8963L27.0701 24.4989C29.0952 21.9224 30.3043 18.6758 30.3043 15.1521C30.3042 6.79727 23.507 0 15.152 0C15.1518 0 15.1523 0 15.152 0C11.1049 0 7.29953 1.57617 4.43797 4.43781C1.57602 7.29977 0 11.1048 0 15.1521C0 23.507 6.79719 30.3042 15.152 30.3042C18.6757 30.3042 21.9224 29.0952 24.4988 27.0702L36.8961 39.4675C37.2511 39.8225 37.7165 40 38.1818 40C38.6471 40 39.1125 39.8226 39.4673 39.4674C40.1776 38.7575 40.1776 37.6062 39.4674 36.8963ZM15.152 26.6679C8.80234 26.6679 3.63641 21.502 3.63641 15.1521C3.63641 12.0761 4.83422 9.18422 7.00922 7.00922C9.18422 4.83406 12.076 3.63641 15.152 3.63641C21.502 3.63641 26.6679 8.80234 26.6679 15.1522C26.6679 21.502 21.502 26.6679 15.152 26.6679Z" fill="#1D7460"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_50_287">
+                              <rect width="40" height="40" fill="white"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                                                
+                      </label>
+                      <input type="text" id="search" placeholder="Sbě" class="text-base md:text-lg lg:text-xl text-black placeholder:text-black font-bold border-none outline-none">
+                  </div>
+                  <div id="close-search" class=" w-6 h-6">
+                      <svg class="w-full h-full" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 34L34 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
+                          <path d="M34 34L2 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
+                          </svg>                                            
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="update" class="bg-orange">
+          <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[8px] flex justify-between  items-center gap-4">
+              <div class="flex items-center gap-2">
+                  <div class="">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_50_36)">
+                          <path d="M12.8064 19.9675H7.23994C6.44274 19.9675 5.6502 19.6691 5.15136 19.0724L0.974206 14.8952C0.37747 14.2985 0.0791016 13.6038 0.0791016 12.8066V7.24019C0.0791016 6.44298 0.37747 5.65044 0.974206 5.15161L5.15136 0.974451C5.7481 0.377714 6.44274 0.0793457 7.23994 0.0793457H12.7085C13.5057 0.0793457 14.2982 0.377714 14.7971 0.974451L18.9742 5.15161C19.6688 5.74834 19.9672 6.44298 19.9672 7.24019V12.7087C19.9672 13.5059 19.6688 14.2985 19.0721 14.7973L14.895 18.9745C14.2982 19.6691 13.6036 19.9675 12.8064 19.9675ZM7.23994 2.06536C7.03947 2.06536 6.74111 2.16326 6.5453 2.36373L2.36815 6.54088C2.16768 6.74135 2.06978 7.03972 2.06978 7.23552V12.7041C2.06978 13.0024 2.16768 13.2029 2.36815 13.3987L6.5453 17.5758C6.74577 17.8742 7.04414 17.9721 7.23994 17.9721H12.7085C13.0068 17.9721 13.2073 17.8742 13.4031 17.6738L17.5803 13.4966C17.7807 13.2961 17.8786 13.1003 17.8786 12.802V7.24019C17.8786 6.94182 17.7807 6.74135 17.5803 6.54555L13.4031 2.36839C13.3052 2.16792 13.0068 2.07002 12.8064 2.07002H7.23994V2.06536Z" fill="white"/>
+                          <path d="M10.0233 12.0141C9.42654 12.0141 9.03027 11.6178 9.03027 11.0211V6.04672C9.03027 5.44998 9.42654 5.05371 10.0233 5.05371C10.62 5.05371 11.0163 5.44998 11.0163 6.04672V11.0211C11.0163 11.6132 10.62 12.0141 10.0233 12.0141Z" fill="white"/>
+                          <path d="M10.0233 14.9977C9.42654 14.9977 9.03027 14.6015 9.03027 14.0047C9.03027 13.408 9.42654 13.0117 10.0233 13.0117C10.62 13.0117 11.0163 13.408 11.0163 14.0047C11.0163 14.6015 10.62 14.9977 10.0233 14.9977Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_50_36">
+                          <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <p class="text-white text-xs sm:text-sm lg:text-base"><span class="font-bold  text-xs sm:text-sm lg:text-base">Aktuální informace:</span> Sběrný dvůr v Kyjově nebude otevřen 5. - 6. července 202</p>
+              </div>
+              <div id="update-close" class="">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.59961 14.3999L14.3996 1.5999" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M14.4004 14.3999L1.2004 1.19989" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      </svg>                        
+              </div>
+          </div>
+      </div>
+      <div id="dropdown-section" class="bg-green-600 hidden transition-all ease-in duration-300">
+          <ul class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-[14px] flex items-center gap-[64px] justify-between text-white font-bold relative">
+              <div class="absolute -top-2 left-[40%] xs:left-[30%] sm:left-[18%] rotate-45 w-4 h-4 bg-green-600"></div>
+              <li>
+                  <a class="flex items-center gap-2" href="./subpagetwo.html">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Odpad na sběrný dvůr</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="./subpageone.html">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Uložení odpadu na skládce</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Svoz komunálního a BIO odpadu</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Potřebuji přistavit kontejner</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej nádob na odpady</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej kompostu</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="flex items-center gap-2" href="">
+                  <div class="">
+                      <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_5629)">
+                          <path d="M1.46523 12L0 10.6547L5.06955 6L0 1.34532L1.46523 0L8 6L1.46523 12Z" fill="#519888"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_5629">
+                          <rect width="8" height="12" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                  </div>
+                  <span>Prodej recyklátu</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
     </header>
     <!-- header end -->
 
@@ -303,40 +303,47 @@
         <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col gap-[35px] items-center">
             <h2 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">Formulář pro výběr obce</h2>
             <div class="max-w-[800px] flex flex-col">
-                <form class="bg-white px-4 sm:px-[50px] md:px-[96px] pb-[30px] sm:pb-[48px] pt-[40px] sm:pt-[56px] flex flex-col gap-[23px] rounded-tl-[24px] border-2 border-grey-200">
-                    <div class="flex flex-col gap-[1px]">
-                        <p class="font-bold text-sm sm:text-base md:text-lg leading-[140%] text-black">Vyberte vaši obec <span class="text-orange">*</span></p>
-                        <div class="py-[9px] px-4 border-[2px] border-grey-400 rounded-[8px] w-full flex items-center justify-between">
-                            <span class="text-base sm:text-lg md:text-xl leading-[140%] text-black">Otrokovice</span>
-                            <div>
-                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_24_2737)">
-                                    <path d="M-7.11768e-08 1.62833L1.55165 -6.31558e-07L8 6.74793L14.444 -6.80168e-08L16 1.62833L8 10L-7.11768e-08 1.62833Z" fill="#1D7460"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_24_2737">
-                                    <rect width="10" height="16" fill="white" transform="translate(16) rotate(90)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>                                    
-                            </div>
+              <form class="bg-white px-4 sm:px-[50px] md:px-[96px] pb-[30px] sm:pb-[48px] pt-[40px] sm:pt-[56px] flex flex-col gap-[23px] rounded-tl-[24px] border-2 border-grey-200">
+                <div class="flex flex-col gap-[1px] relative">
+                    <p class="font-bold text-sm sm:text-base md:text-lg leading-[140%] text-black">Vyberte vaši obec <span class="text-orange">*</span></p>
+                    <div class="mobile-btn cursor-pointer py-[9px] px-4 border-[2px] border-grey-400 rounded-[8px] w-full flex items-center justify-between">
+                        <span class="text-base select sm:text-lg md:text-xl leading-[140%] text-black">Otrokovice</span>
+                        <div class="">
+                            <svg class="" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_24_2737)">
+                                <path d="M-7.11768e-08 1.62833L1.55165 -6.31558e-07L8 6.74793L14.444 -6.80168e-08L16 1.62833L8 10L-7.11768e-08 1.62833Z" fill="#1D7460"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_24_2737">
+                                <rect width="10" height="16" fill="white" transform="translate(16) rotate(90)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                    
                         </div>
                     </div>
-                    <button class="px-5 md:px-8 py-3 md:py-[15px] border-[2px] border-orange rounded-tl-[16px] rounded-br-[16px] font-bold text-sm sm:text-base md:text-lg text-orange self-start">Zjistit termín svozu</button>
-                </form>
+                    <ul class="mobileTab-container z-10 absolute left-0 top-16 md:top-20 right-0 hidden border-2 bg-green-100 text-base sm:text-lg md:text-xl">
+                      <li class="hover:bg-white py-2 px-4 cursor-pointer">Option 1</li>
+                      <li class="hover:bg-white py-2 px-4 cursor-pointer">Option 2</li>
+                      <li class="hover:bg-white py-2 px-4 cursor-pointer">Option 3</li>
+                      <li class="hover:bg-white py-2 px-4 cursor-pointer">Option 4</li>
+                    </ul> 
+                </div>
+                <button class="px-5 md:px-8 py-3 md:py-[15px] border-[2px] border-orange rounded-tl-[16px] rounded-br-[16px] font-bold text-sm sm:text-base md:text-lg text-orange self-start">Zjistit termín svozu</button>
+            </form>
                 <div class="bg-white px-4 sm:px-[50px] md:px-[96px] pt-10 pb-10 sm:pb-[60px] flex flex-col gap-6 rounded-br-[24px]">
                     <div class="flex flex-col gap-4">
                         <h5 class="font-bold text-lg sm:text-xl md:text-2xl leading-[120%] text-green-800">Tabulka a výsledek formuláře</h5>
                         <p class="text-base sm:text-lg md:text-xl text-black leading-[140%]">Bioodpad odvážíme ve Stránicích každou sudou středu v měsíci. Přehled ke stažení najdete zde:</p>
                     </div>
-                    <table class="w-full border-collapse text-left">
+                    <div class="w-full">
+                      <table class="w-full border-collapse text-left">
                         <thead class="border-t-2 border-t-grey-200">
                           <tr>
-                            <th class="w-1/3 md:w-1/2 px-6 py-[9px] font-bold text-base sm:text-lg md:text-xl text-black leading-[150%]">Měsíc</th>
-                            <th class="w-2/3 md:w-1/2 px-6 py-[9px] font-bold text-base sm:text-lg md:text-xl text-black leading-[150%]">Termín svozu</th>
+                            <th class="px-6 py-[9px] font-bold text-base sm:text-lg md:text-xl text-black leading-[150%]">Měsíc</th>
+                            <th class="px-6 py-[9px] font-bold text-base sm:text-lg md:text-xl text-black leading-[150%]">Termín svozu</th>
                           </tr>
                         </thead>
-                        <tbody class="divide-y divide-gray-200">
+                        <tbody class="">
                           <tr class="border-y-2 border-y-grey-400 bg-grey-200  text-base sm:text-lg md:text-xl text-black leading-[150%]">
                             <td class="px-6 py-[9px] ">Březen</td>
                             <td class="px-6 py-[9px] ">
@@ -402,6 +409,7 @@
                           </tr>
                         </tbody>
                       </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -438,7 +446,7 @@
         <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col gap-10 items-center">
             <h2 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">Seznam produktů</h2>
             <div class="">
-                <div class="w-svw lg:w-auto bg-white pt-8 pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6 lg:pr-14 pb-[29px] flex flex-col lg:flex-row gap-14 lg:items-center border-b-2 border-b-grey-200">
+                <div class="w-svw lg:w-auto bg-white pt-8 pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6 lg:pr-14 pb-[29px] flex flex-col lg:flex-row gap-14 lg:items-center border-b-2 border-b-grey-200 rounded-tl-[24px]">
                     <div class="flex flex-col gap-4">
                         <div class="bg-grey-200 relative rounded-tl-[16px] rounded-br-[16px]">
                             <div class="py-[60px]">
@@ -478,7 +486,8 @@
                             </div>
                             <div class="flex flex-col gap-4">
                                 <h6 class="font-bold text-base xl:text-lg 2xl:text-xl leading-[140%] text-black">Základní parametry</h6>
-                                <table class="border-collapse">
+                                <div class="overflow-x-scroll sm:overflow-x-visible w-full">
+                                  <table class="border-collapse min-w-[450px] w-full">
                                     <tbody>
                                         <tr class="border-y-2 border-y-grey-400 bg-grey-200  text-xl text-black leading-[150%]">
                                             <td class="px-6 py-[9px] font-bold text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-black leading-[150%]">Max. zátěž:</td>
@@ -502,6 +511,7 @@
                                           </tr>
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                         </div>
                         <div class="flex justify-between items-center">
@@ -550,7 +560,8 @@
                             </div>
                             <div class="flex flex-col gap-4">
                                 <h6 class="font-bold text-base xl:text-lg 2xl:text-xl leading-[140%] text-black">Základní parametry</h6>
-                                <table class="border-collapse">
+                                <div class="overflow-x-scroll sm:overflow-x-visible w-full">
+                                  <table class="border-collapse min-w-[450px] w-full">
                                     <tbody>
                                         <tr class="border-y-2 border-y-grey-400 bg-grey-200  text-xl text-black leading-[150%]">
                                             <td class="px-6 py-[9px] font-bold text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-black leading-[150%]">Max. zátěž:</td>
@@ -574,6 +585,7 @@
                                           </tr>
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                         </div>
                         <div class="flex justify-between items-center">
@@ -582,7 +594,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-svw lg:w-auto bg-white pt-8 pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6 lg:pr-14 pb-[29px] flex flex-col lg:flex-row gap-14 lg:items-center border-b-2 border-b-grey-200">
+                <div class="w-svw lg:w-auto bg-white pt-8 pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6 lg:pr-14 pb-[29px] flex flex-col lg:flex-row gap-14 lg:items-center border-b-2 border-b-grey-200 rounded-br-[24px]">
                     <div class="flex flex-col gap-4">
                         <div class="bg-grey-200 relative rounded-tl-[16px] rounded-br-[16px]">
                             <div class="py-[60px]">
@@ -622,7 +634,8 @@
                             </div>
                             <div class="flex flex-col gap-4">
                                 <h6 class="font-bold text-base xl:text-lg 2xl:text-xl leading-[140%] text-black">Základní parametry</h6>
-                                <table class="border-collapse">
+                                <div class="overflow-x-scroll sm:overflow-x-visible w-full">
+                                  <table class="border-collapse min-w-[450px] w-full">
                                     <tbody>
                                         <tr class="border-y-2 border-y-grey-400 bg-grey-200  text-xl text-black leading-[150%]">
                                             <td class="px-6 py-[9px] font-bold text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-black leading-[150%]">Max. zátěž:</td>
@@ -646,6 +659,7 @@
                                           </tr>
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                         </div>
                         <div class="flex justify-between items-center">
@@ -660,150 +674,162 @@
     <!-- products start -->
 
     <!-- contact starts-->
-    <section>
-        <div
-          class="h-[400px] lg:h-[500px] py-28 w-full overflow-hidden relative bg-white"
-        >
-          <img
-            class="right-0 lg:right-4 bottom-0 lg:bottom-[200px] absolute"
-            src="./public/icon/Group.svg"
-            alt=""
-          />
-          <img
-            class="-right-20 hidden lg:block md:right-[250px] bottom-4 absolute"
-            src="./public/icon/Group3.svg"
-            alt=""
-          />
-          <img
-            class="-left-20 md:left-0 bottom-0 md:bottom-14 absolute"
-            src="./public/icon/Group2.svg"
-            alt=""
-          />
-          <img
-            class="object-cover object-center absolute bottom-0 w-full h-auto"
-            src="./public/imgaes/pozadí 1.png"
-            alt=""
-          />
-          <div
-            class="max-w-6xl m-auto absolute bottom-0 lg:bottom-32 px-4 py-10 left-0 right-0"
-          >
-            <h1
-              class="text-2xl lg:text-[64px] text-green-800 font-bold font-barlow"
-            >
-              Máte dotaz?
-            </h1>
-            <p class="font-inter text-lx text-black mt-0 lg:mt-4">
-              Kontaktujte nás.
-            </p>
-            <div class="flex flex-wrap items-center gap-4 md:gap-8 mt-10">
-              <div class="flex items-center gap-4">
-                <img class="w-8 h-8" src="./public/icon/tell.svg" alt="" />
-                <span>
-                  <p class="text-lx font-bold font-inter text-green-800">
-                    518 611 688
-                  </p>
-                  <p class="text-lg font-inter text-black">
-                    Po - Pá: 7:00 - 18:00
-                  </p>
-                </span>
-              </div>
-              <div class="flex items-center gap-4">
-                <img class="w-8 h-8" src="./public/icon/email.svg" alt="" />
-                <span>
-                  <p class="text-lx font-bold font-inter text-green-800">
-                    info@ekor.cz
-                  </p>
-                  <p class="text-lg font-inter text-black">
-                    Odpovídáme do 24 hodin
-                  </p>
-                </span>
-              </div>
-              <div class="flex items-center gap-4">
-                <img class="w-8 h-8" src="./public/icon/write.svg" alt="" />
-                <span>
-                  <p class="text-lx font-bold font-inter text-green-800">
-                    Kontaktní formulář
-                  </p>
-                  <p class="text-lg font-inter text-black">
-                    Odpovídáme do 24 hodin
-                  </p>
-                </span>
-              </div>
-            </div>
+    <section class="bg-white pt-10 md:pt-16 pb-[100px] md:pb-[166px] relative">
+      <div class="">
+        <div>
+          <div class="absolute top-0 right-0">
+            <img class="w-full h-full object-cover" src="./public/imgaes/frame 1.png" alt="">
+          </div>
+          <div class="absolute bottom-0 right-1/4">
+            <img class="w-full h-full object-cover" src="./public/imgaes/frame 2.png" alt="">
+          </div>
+          <div class="absolute bottom-0 left-0 xl:left-[20%]">
+            <img class="w-full h-full object-cover" src="./public/imgaes/frame 3.png" alt="">
+          </div>
+          <div class="absolute bottom-0 right-0">
+            <img class="w-full h-full object-cover" src="./public/imgaes/pozadí 1.png" alt="">
           </div>
         </div>
-    </section>
-    <!-- contact ends -->
+        <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex flex-col gap-[37px]">
+          <div class="flex flex-col gap-6">
+            <h1 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800">
+              Máte dotaz?
+            </h1>
+            <p class="text-base md:text-lg lg:text-xl text-black leading-[140%]">
+              Kontaktujte nás.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center  gap-6 md:gap-10 relative z-10">
+            <a href="callto:518 611 688" class="flex gap-4 items-center cursor-pointer">
+              <div class="">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_50_819)">
+                  <path d="M25.5168 40.1076C25.4172 40.1076 25.3235 40.1076 25.2239 40.1076C22.2064 40.0783 19.1128 39.1818 16.0134 37.43C13.5701 36.0472 11.1093 34.1255 8.70123 31.7174C3.2347 26.2508 0.439913 20.7199 0.387182 15.2768C0.357886 11.8316 0.744586 6.8221 4.45339 3.10744C5.87129 1.68954 7.62901 0.904418 9.41604 0.886841H9.46291C9.46877 0.886841 9.46877 0.886841 9.47463 0.886841C11.6132 0.886841 13.5994 2.05866 14.6599 3.94529L15.9372 6.20689L15.9548 6.24205C16.5817 7.54277 16.8864 8.53881 16.945 9.45869C17.027 10.736 16.6169 11.8433 15.7146 12.7456L12.0058 16.5892C12.4803 17.9602 13.8572 21.3644 16.611 24.124C19.3589 26.866 22.6693 28.1726 24.0286 28.6238L27.7433 24.7685C29.8584 22.6592 32.3544 23.5381 34.2879 24.54L34.323 24.5576L36.5495 25.8055C38.442 26.866 39.6138 28.864 39.6079 31.0084V31.0553C39.5962 32.8365 38.8052 34.6 37.3873 36.0179C35.7819 37.6233 33.7488 38.7717 31.3525 39.4221C29.6533 39.8791 27.7433 40.1076 25.5168 40.1076ZM9.48049 3.23634H9.47463H9.43947C8.27937 3.24219 7.09584 3.78709 6.11737 4.76556C3.02963 7.8533 2.70738 12.23 2.73668 15.2533C2.77769 20.0578 5.34397 25.0439 10.3594 30.0592C15.4275 35.1274 20.437 37.7171 25.2414 37.7639C28.2589 37.7932 32.6239 37.4651 35.7292 34.3598C36.7077 33.3813 37.2526 32.2037 37.2584 31.0377V31.0026C37.2584 29.7077 36.5436 28.5007 35.3952 27.8504L33.1864 26.6082C31.0009 25.4774 30.1396 25.6825 29.4014 26.4149L24.7434 31.2545L24.0872 31.0904C23.8763 31.0377 18.9429 29.7663 14.9529 25.7821C10.9804 21.7979 9.60353 16.8001 9.54494 16.5892L9.37502 15.9447L14.0506 11.0992C14.7302 10.4196 14.9353 9.54657 13.8572 7.29082L12.6268 5.09953C11.9765 3.94528 10.7753 3.23634 9.48049 3.23634Z" fill="#1D7460"/>
+                  <path d="M39.6075 19.2497H37.2639C37.2639 10.42 30.0806 3.23676 21.251 3.23676V0.893127C26.155 0.893127 30.7661 2.80319 34.2347 6.27177C37.6974 9.73449 39.6075 14.3456 39.6075 19.2497Z" fill="#F16520"/>
+                  <path d="M27.1101 19.2497H24.7664C24.7664 17.3103 23.1903 15.7342 21.251 15.7342V13.3906C24.4793 13.3906 27.1101 16.0154 27.1101 19.2497Z" fill="#F16520"/>
+                  <path d="M33.3559 19.2497H31.0122C31.0122 13.8651 26.6296 9.48255 21.2451 9.48255V7.13892C27.9245 7.13892 33.3559 12.5703 33.3559 19.2497Z" fill="#F16520"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_50_819">
+                  <rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>                    
+              </div>
+              <div class="">
+                <p class="font-bold text-base md:text-lg lg:text-xl leading-[140%] text-green-800">518 611 688</p>
+                <span class="text-sm md:text-base lg:text-lg leading-[140%] text-black">Po - Pá: 7:00 - 18:00</span>
+              </div>
+            </a>
+            <a href="mailto:info@ekor.cz" class="flex gap-4 items-center cursor-pointer">
+              <div class="">
+                <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.9996 15.8454L3.69582 2.99225H3.01172V4.99253L20.9996 18.3438L38.9876 4.99253V2.99225H38.3035L20.9996 15.8454Z" fill="#F16520" stroke="#F16520" stroke-width="0.5"/>
+                  <path d="M36.7747 1H5.22535C2.89135 1 1 2.88781 1 5.21745V25.7825C1 28.1042 2.89135 30 5.22535 30H36.7747C39.1006 30 41 28.1122 41 25.7825V5.21745C41 2.88781 39.1006 1 36.7747 1ZM38.9879 5.00055V5.12105V25.7825C38.9879 27.0036 37.998 27.9917 36.7747 27.9917H5.22535C4.00201 27.9917 3.01207 27.0036 3.01207 25.7825V5.00055V3.00831H3.69618H4.59759H38.3038H38.9879V5.00055Z" fill="#1D7460" stroke="#1D7460" stroke-width="0.5"/>
+                </svg>                                        
+              </div>
+              <div class="">
+                <p class="font-bold text-base md:text-lg lg:text-xl leading-[140%] text-green-800">info@ekor.cz</p>
+                <span class="text-sm md:text-base lg:text-lg leading-[140%] text-black">Odpovídáme do 24 hodin</span>
+              </div>
+            </a>
+            <a href="" class="flex gap-4 items-center cursor-pointer">
+              <div class="">
+                <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_50_841)">
+                  <path d="M3.5 33.1111L4.53125 25.9326C4.75781 24.3633 5.5 22.8794 6.63281 21.7607L27.2578 1.25076C28.9297 -0.411792 31.6563 -0.411792 33.3359 1.25076L35.5469 3.44936C36.3516 4.25733 36.7969 5.32944 36.7969 6.47148C36.7969 7.61351 36.3516 8.68562 35.5391 9.49359L14.9141 30.0035C13.7891 31.1223 12.2969 31.8681 10.7188 32.0934L3.5 33.1111ZM30.2891 2.33064C29.7891 2.33064 29.2891 2.51709 28.9063 2.89777L8.28125 23.4077C7.50781 24.1769 7 25.1868 6.84375 26.2667L6.25781 30.3687L10.3828 29.786C11.4609 29.6306 12.4844 29.1257 13.2578 28.3565L33.8828 7.84657C34.25 7.48143 34.4531 6.99199 34.4531 6.47148C34.4531 5.95096 34.25 5.46151 33.8828 5.09637L31.6719 2.89777C31.2891 2.51709 30.7891 2.33064 30.2891 2.33064Z" fill="#1D7460"/>
+                  <path d="M9.02152 21.0253L7.36426 22.6733L13.9436 29.2159L15.6009 27.5679L9.02152 21.0253Z" fill="#1D7460"/>
+                  <path d="M24.4903 5.64257L22.833 7.29059L29.4124 13.8332L31.0696 12.1852L24.4903 5.64257Z" fill="#1D7460"/>
+                  <path d="M40 36.6693H0V39H40V36.6693Z" fill="#F16520"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_50_841">
+                  <rect width="40" height="39" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>                                                            
+              </div>
+              <div class="">
+                <p class="font-bold text-base md:text-lg lg:text-xl leading-[140%] text-green-800">Kontaktní formulář</p>
+                <span class="text-sm md:text-base lg:text-lg leading-[140%] text-black">Odpovídáme do 24 hodin</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+   </section>
+   <!-- contact ends -->
 
     <!-- footer starts -->
     <footer class="text-white">
-        <div class="bg-green-600">
-          <div
-            class="max-w-6xl m-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-inter items-center"
-          >
-            <div class="w-20 h-20 overflow-hidden">
-              <img src="./public/imgaes/logo (2).png" alt="" />
-            </div>
-            <ul>
-              <h1 class="font-bold text-xl">Menu</h1>
-              <li class="list-none text-lg font-normal">
-                <a href="#">Jsem občan</a>
-              </li>
-              <li class="list-none text-lg"><a href="#">Jsem podnikatel</a></li>
-              <li class="list-none text-lg">
-                <a href="#">Jak a proč třídit</a>
-              </li>
-              <li class="list-none text-lg"><a href="#">O EKORu</a></li>
-            </ul>
-            <ul>
-              <h1 class="font-bold text-xl">Důležité odkazy</h1>
-              <li class="list-none text-lg font-normal">
-                <a href="#">Aktuality</a>
-              </li>
-              <li class="list-none text-lg"><a href="#">Dokumenty</a></li>
-              <li class="list-none text-lg"><a href="#">GDPR</a></li>
-              <li class="list-none text-lg"><a href="./kontackt.html">Kontakty</a></li>
-            </ul>
-            <ul class="">
-              <h1 class="font-bold text-xl">S společnosti</h1>
-              <li class="list-none text-lg font-normal">
-                <a href="#">EKOR, s. r. o.</a>
-              </li>
-              <li class="list-none text-lg">
-                <a href="#">Havlíčkova 1398/49a, 697 01 Kyjov</a>
-              </li>
-              <li class="list-none text-lg"><a href="#">IČ: 607000262</a></li>
-              <li class="list-none text-lg">
-                <a href="#">DIČ: CZ607000262</a>
-              </li>
-            </ul>
+      <div class="bg-green-600">
+        <div
+          class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 pt-10 lg:pt-11 xl:pt-[66px] pb-12 lg:pb-20 xl:pb-[86px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-inter items-center"
+        >
+          <div class="w-20 h-20 overflow-hidden ">
+            <img src="./public/imgaes/logo (2).png" alt="" />
           </div>
+          <ul class="self-start flex flex-col gap-3">
+            <h1 class="font-bold text-base md:text-lg lg:text-xl pb-1 leading-[140%]">Menu</h1>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal">
+              <a href="#">Jsem občan</a>
+            </li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="#">Jsem podnikatel</a></li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal">
+              <a href="#">Jak a proč třídit</a>
+            </li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="#">O EKORu</a></li>
+          </ul>
+          <ul class="self-start flex flex-col gap-3">
+            <h1 class="font-bold text-base md:text-lg lg:text-xl pb-1 leading-[140%]">Důležité odkazy</h1>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal">
+              <a href="#">Aktuality</a>
+            </li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="#">Dokumenty</a></li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="#">GDPR</a></li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="./kontackt.html">Kontakty</a></li>
+          </ul>
+          <ul class="self-start flex flex-col gap-3">
+            <h1 class="font-bold text-base md:text-lg lg:text-xl pb-1 leading-[140%]">S společnosti</h1>
+            <li class="list-none text-sm md:text-base lg:text-lg  font-normal">
+              <a href="#">EKOR, s. r. o.</a>
+            </li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal">
+              <a href="#">Havlíčkova 1398/49a, 697 01 Kyjov</a>
+            </li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal"><a href="#">IČ: 607000262</a></li>
+            <li class="list-none text-sm md:text-base lg:text-lg font-normal">
+              <a href="#">DIČ: CZ607000262</a>
+            </li>
+          </ul>
         </div>
-        <div class="bg-green-800">
-          <div
-            class="max-w-6xl m-auto flex gap-4 items-center justify-center md:justify-between text-white p-4 text-lg flex-wrap font-inter"
-          >
-            <p class="">© 2024 EKOR s. r. o.</p>
-            <div class="flex items-center gap-3">
-              Vyrobila <img src="./public/imgaes/activemedia 1.png" alt="" />
-            </div>
-            <svg
-              class="cursor-pointer"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#FFFFFF"
-            >
-              <path
-                d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
+      </div>
+      <div class="bg-green-800">
+        <div class="max-w-screen-3xl mx-auto px-4 md:px-8 lg:px-12 xl:px-16 flex gap-4 items-center justify-center md:justify-between text-white p-4 text-lg flex-wrap font-inter">
+          <p class="">© 2024 EKOR s. r. o.</p>
+          <div class="flex items-center gap-4">
+            Vyrobila <img src="./public/imgaes/activemedia 1.png" alt="" />
           </div>
+          <a href="#" class="cursor-pointer">
+              <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path
+              d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+            />
+          </svg>
+          </a>
         </div>
+      </div>
     </footer>
     <!-- footer ends -->
 
     <script src="./index.js"></script>
+    <script src="./tab.js"></script>
+    <script src="./modal.js"></script>
 </body>
 </html>
