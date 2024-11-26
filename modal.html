@@ -21,21 +21,22 @@
         <div class="h-screen w-full bg-[#000000] fixed bg-opacity-60 overlay hidden left-0 right-0 bottom-0 top-0"></div>
         <!-- modal 1-->
           <section>
-              <div class="fixed left-0 right-0 top-6">
-                    <div class="max-w-[680px] m-auto bg-white rounded-tl-3xl rounded-br-3xl waste relative hidden pt-4">
-                          <div class="absolute top-4 right-6">
+              <div class="fixed left-0 right-0 top-1/2 -translate-y-1/2 z-50">
+                    <div class="max-w-[720px] m-auto bg-white rounded-tl-[24px] rounded-br-[24px]  waste relative hidden">
+                          <div class="w-5 lg:w-6 absolute top-4 right-6">
                                 <svg class="cursor-pointer close-btn" width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M2 34L34 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
                                       <path d="M34 34L2 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
                                 </svg>
                           </div>
-                          <div class="pb-6 pt-8 px-6 md:px-10">
-                                <div>
-                                      <h1 class="text-green-800 font-bold text-2xl md:text-[40px] font-inter p-0">Stavební odpad</h1>
-                                      <p class="mt-0 md:mt-4 text-base md:text-xl text-black font-inter mb-4">Detail odpadu nebo produktu.</p>
+                          <div class="p-6 lg:p-8 xl:p-10 2xl:p-14 flex flex-col gap-8">
+                                <div class="flex flex-col gap-1 lg:gap-3">
+                                      <h1 class="text-green-800 font-extrabold text-2xl lg:text-[40px] font-inter">Stavební odpad</h1>
+                                      <p class="text-base lg:text-lg 2xl:text-xl leading-[150%] text-black">Detail odpadu nebo produktu.
+                                    </p>
                                 </div>
-                                <div class="h-[350px] overflow-y-scroll scrollbar scrollbar-thumb-green-800 scrollbar-track-slate-200 scrollbar-thin">
-                                      <div class="bg-green-100 rounded-tl-3xl px-4 py-8 md:px-8 flex flex-col gap-4">
+                                <div class="">
+                                      <div class="bg-green-100 rounded-tl-3xl p-4 lg:px-8 flex flex-col gap-4">
                                             <h1 class="font-extrabold text-green-800 font-inter text-xl md:text-[32px]">Ano</h1>
                                             <ul class="flex flex-col gap-0 md:gap-2 text-base md:text-xl">
                                                   <li class="flex items-center gap-3">
@@ -64,9 +65,9 @@
                                                         </svg><span class="text-base md:text-xl">Dřevo</span>
                                                   </li>
                                             </ul>
-                                            <p class="text-base md:text-lg font-inter text-black italic">Pozn.: Objemné předměty (např. skříň či postel) je nutné před tím, než je odvezete na sběrné středisko, rozložit či rozdělit na desky.</p>
+                                            <p class="text-base md:text-lg  font-inter text-black italic">Pozn.: Objemné předměty (např. skříň či postel) je nutné před tím, než je odvezete na sběrné středisko, rozložit či rozdělit na desky.</p>
                                       </div>
-                                      <div class="bg-orange-100 rounded-br-3xl p-8">
+                                      <div class="bg-orange-100 rounded-br-3xl  p-4 lg:px-8">
                                             <h1 class="font-extrabold text-orange font-inter text-xl md:text-[32px] my-2">NE</h1>
                                             <ul>
                                                   <li class="flex items-center gap-3 text-xl font-inter text-black">
@@ -77,27 +78,28 @@
                                             </ul>
                                       </div>
                                 </div>
-                                <button class="w-32 h-12 border-orange border-2 text-orange mt-4 rounded-tl-lg rounded-br-lg flex justify-center items-center font-bold font-inter">Zavřít okno</button>
+                                <button class="self-start py-2 md:py-[10px] lg:py-[15px] px-[18px] md:px-6 lg:px-8 rounded-tl-[16px] rounded-br-[16px] font-bold text-sm md:text-base lg:text-lg text-white hover:text-orange bg-orange hover:bg-white border-2 hover:border-2 border-orange hover:border-orange transition-all duration-200 ease-in">Zavřít okno</button>
                           </div>
               </div>
               </div>
           </section>
           <!-- modal 2 -->
           <section>
-              <div class="fixed left-0 right-0 top-8">
-                    <div class="max-w-[680px] m-auto bg-white rounded-tl-3xl rounded-br-3xl formModal-container hidden pt-4 relative">
-                          <div class="absolute top-4 right-6">
+              <div class="fixed left-0 right-0 top-1/2 -translate-y-1/2 z-50">
+                    <div class="max-w-[720px] m-auto bg-white rounded-tl-[24px] rounded-br-[24px] formModal-container hidden relative">
+                          <div class="w-5 lg:w-6 absolute top-4 right-6">
                                 <svg class="cursor-pointer formModalClose-btn" width="24" height="24" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path d="M2 34L34 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
                                       <path d="M34 34L2 2" stroke="#1D7460" stroke-width="3" stroke-linecap="round"/>
                                 </svg>
                           </div>
-                          <div class="pb-6 pt-8 px-6 md:px-10">
-                                <div>
-                                      <h1 class="text-green-800 font-extrabold text-2xl md:text-3xl lg:text-[40px] font-inter">Objednávka služby</h1>
-                                      <p class="text-sm md:text-base lg:text-xl leading-[150%] text-black font-inter mb-4 mt-2">Objednejte formulářem nebo zavoláním na<span class="text-green-800">774 040 212.</span></p>
+                          <div class="p-6 lg:p-8 xl:p-10 2xl:p-14 flex flex-col gap-8">
+                                <div class="flex flex-col gap-1 lg:gap-3">
+                                    <h1 class="text-green-800 font-extrabold text-2xl lg:text-[40px] font-inter p-0">Objednávka služby</h1>
+                                      <p class="text-base lg:text-lg 2xl:text-xl leading-[150%] text-black">Objednejte formulářem nebo zavoláním na <a class="font-extrabold text-green-800" href="callto:774 040 212.">774 040 212.</a>
+                                      </p>
                                 </div>
-                                <div class="h-[320px] overflow-y-scroll scrollbar-thin scrollbar-thumb-green-800 scrollbar-track-slate-200 ">
+                                <div class="flex flex-col gap-[26px] ">
                                       <form action="" class="flex flex-col gap-3">
                                             <div class="flex flex-col gap-[1px]">
                                              <label class="text-sm md:text-base lg:text-lg leading-[140%] text-black font-bold font-inter" for="">Jméno<span class="text-orange">*</span></label>
@@ -116,16 +118,15 @@
                                              <textarea required class="border h-[120px] border-grey-100 text-base md:text-lg lg:text-xl text-black leading-[150%] font-inter p-2 rounded-lg focus:border-green-800 focus:ring-1 focus:ring-green-800 focus:outline-none " type="text" name="" id="" placeholder="Popište nám, co potřebujete" name="" id=""></textarea>
                                             </div>
                                             
-                                           </form>
+                                      </form>
+                                      <div class="flex flex-col sm:flex-row items-center justify-center md:justify-around gap-4">
+                                          <div class="flex items-center gap-2">
+                                                <input type="checkbox" id="accept" class="appearance-none h-6 w-6 border-2 border-green-800 rounded-[4px] checked:bg-white checked:border-green-800 transition duration-200 relative"/>
+                                                <label for="accept" class="text-sm md:text-lg font-inter">Souhlasím se <span class="text-green-800 font-bold">zpracováním osobních údajů <span class="text-orange">*</span></span></label>
+                                          </div>
+                                          <button class="py-2 md:py-[10px] lg:py-[15px] px-[18px] md:px-6 lg:px-8 rounded-tl-[16px] rounded-br-[16px] font-bold text-sm md:text-base lg:text-lg text-white hover:text-orange bg-orange hover:bg-white border-2 hover:border-2 border-orange hover:border-orange transition-all duration-200 ease-in">Odeslat</button>
+                                    </div>
                                 </div>
-                                
-                                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-around gap-4 mt-[26px]">
-                                      <div class="flex items-center gap-2">
-                                            <input type="checkbox" id="accept" class="appearance-none h-6 w-6 border-2 border-green-800 rounded-[4px] checked:bg-white checked:border-green-800 transition duration-200 relative"/>
-                                            <label for="accept" class="text-sm md:text-lg font-inter">Souhlasím se <span class="text-green-800 font-bold">zpracováním osobních údajů <span class="text-orange">*</span></span></label>
-                                      </div>
-                                      <button class="w-32 h-12 bg-orange text-white rounded-tl-lg rounded-br-lg m-auto md:mr-0 flex justify-center items-center font-bold font-inter">Odeslat</button>
-                                     </div>
                           </div>
                     </div>
                </div>
