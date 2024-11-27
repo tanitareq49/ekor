@@ -32,7 +32,7 @@ module.exports = {
 
         '2xl': '1280px',
 
-        '3xl': '1344px'
+        '3xl': '1344px',
       }
     },
   },

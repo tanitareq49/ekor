@@ -559,10 +559,6 @@ video {
   scrollbar-width: initial;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -577,10 +573,6 @@ video {
 
 .inset-0 {
   inset: 0px;
-}
-
-.inset-1 {
-  inset: 0.25rem;
 }
 
 .-left-\[10\%\] {
@@ -711,18 +703,6 @@ video {
   z-index: 100;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
-.z-\[60\] {
-  z-index: 60;
-}
-
-.z-\[70\] {
-  z-index: 70;
-}
-
 .z-\[150\] {
   z-index: 150;
 }
@@ -805,6 +785,10 @@ video {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-6 {
@@ -953,6 +937,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.basis-\[40\%\] {
+  flex-basis: 40%;
 }
 
 .border-collapse {
@@ -1829,6 +1817,13 @@ input[type="checkbox"]:checked::before {
   background-size: contain;
 }
 
+@media screen and (max-width: 1024px) {
+  input[type="checkbox"]:checked::before {
+    width: 10px;
+    height: 8px;
+  }
+}
+
 .marker\:text-green-800 *::marker {
   color: rgb(29 116 96 );
 }
@@ -2395,6 +2390,10 @@ input[type="checkbox"]:checked::before {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-6 {
+    height: 1.5rem;
   }
 
   .lg\:h-\[23px\] {
