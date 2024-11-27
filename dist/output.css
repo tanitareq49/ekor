@@ -899,6 +899,50 @@ video {
   min-width: 600px;
 }
 
+.min-w-\[800px\] {
+  min-width: 800px;
+}
+
+.min-w-\[768px\] {
+  min-width: 768px;
+}
+
+.min-w-\[760px\] {
+  min-width: 760px;
+}
+
+.min-w-\[700px\] {
+  min-width: 700px;
+}
+
+.min-w-\[730px\] {
+  min-width: 730px;
+}
+
+.min-w-\[740px\] {
+  min-width: 740px;
+}
+
+.min-w-\[750px\] {
+  min-width: 750px;
+}
+
+.min-w-\[770px\] {
+  min-width: 770px;
+}
+
+.min-w-\[720px\] {
+  min-width: 720px;
+}
+
+.min-w-\[562px\] {
+  min-width: 562px;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
 .max-w-48 {
   max-width: 12rem;
 }
@@ -1151,6 +1195,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .overflow-y-auto {

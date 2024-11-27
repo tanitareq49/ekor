@@ -856,76 +856,39 @@
           <h1 class="font-barlow font-bold text-3xl md:text-4xl lg:text-[40px] xl:text-[50px] 2xl:text-[64px] xl:leading-[60px] 2xl:leading-[74px] text-green-800 text-center pb-12">
             Tabulátory a kontakt
           </h1>
-          <div class="mx-auto max-w-[800px] flex-1 bg-white rounded-tl-[24px] pt-6 md:pt-0">
-            <!-- Mobile tab -->
-            <div class="relative md:hidden">
-              <div
-                class="mobile-btn m-auto max-w-48 py-2 px-2 border-2 border-green-800 flex justify-around items-center mt-4 text-lg font-inter cursor-pointer rounded-tl-[16px] rounded-br-[16px]"
-              >
-                <p class="text-black select">Select Option</p>
-                <img
-                  src="./public/icon/keyboard_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-              </div>
-              <ul
-                class="mobileTab-container border-2 border-green-100 bg-green-100 m-auto max-w-48 mt-2 hidden absolute inset-0 top-12 z-10"
-              >
-                <li
-                  data-tab="tab1"
-                  class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white"
-                >
-                  <h4 class="text-green-800 font-bold font-inter text-base">
-                    Možnost číslo 1
-                  </h4>
-                </li>
-                <li
-                  data-tab="tab2"
-                  class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white"
-                >
-                  <h4 class="text-green-800 font-bold font-inter text-base">
-                    Možnost číslo 2
-                  </h4>
-                </li>
-                <li
-                  data-tab="tab3"
-                  class="bg-green-100 cursor-pointer text-center p-2 hover:bg-white"
-                >
-                  <h4 class="text-green-800 font-bold font-inter text-base">
-                    Možnost číslo 3
-                  </h4>
-                </li>
-              </ul>
-            </div>
-            <ul class="bg-green-100 rounded-tl-[24px] md:flex justify-between tabs hidden ">
+          <div class="mx-auto max-w-[800px] flex-1 bg-white rounded-tl-[24px]">
+           
+           <div class="overflow-x-auto">
+            <ul class="min-w-[500px] bg-green-100 rounded-tl-[24px] flex justify-between tabs">
               <li
                 data-tab="tab1"
                 class="cursor-pointer w-full px-8 py-4 text-center btn-active rounded-tl-[24px]"
               >
-                <h4 class="text-green-800 font-bold font-inter text-xl text-nowrap">
+                <h4 class="text-green-800 font-bold font-inter text-sm sm:text-base lg:text-xl text-nowrap">
                   Možnost číslo 1
                 </h4>
-                <p class="text-lg font-inter text-nowrap">tabulátor aktivní</p>
+                <p class="text-xs sm:text-sm lg:text-lg font-inter text-nowrap">tabulátor aktivní</p>
               </li>
               <li
                 data-tab="tab2"
                 class="cursor-pointer w-full px-4 py-4 text-center text-nowrap"
               >
-                <h4 class="text-green-800 font-bold font-inter text-xl text-nowrap">
+                <h4 class="text-green-800 font-bold font-inter text-sm sm:text-base lg:text-xl text-nowrap">
                   Další varianta
                 </h4>
-                <p class="text-lg font-inter text-nowrap">tabulátor aktivní</p>
+                <p class="text-xs sm:text-sm lg:text-lg font-inter text-nowrap">tabulátor aktivní</p>
               </li>
               <li
                 data-tab="tab3"
                 class="cursor-pointer w-full px-4 py-4 text-center"
               >
-                <h4 class="text-green-800 font-bold font-inter text-xl text-nowrap">
+                <h4 class="text-green-800 font-bold font-inter text-sm sm:text-base lg:text-xl text-nowrap">
                   Třetí tabulátor
                 </h4>
-                <p class="text-lg font-inter text-nowrap">tabulátor aktivnív</p>
+                <p class="text-xs sm:text-sm lg:text-lg font-inter text-nowrap">tabulátor aktivnív</p>
               </li>
             </ul>
+           </div> 
               <div id="tab1" class="tab-container active hidden py-12 flex-col items-center gap-6 shadow-lg">
                 <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
                   <div class="flex items-center gap-4 -ml-6">
