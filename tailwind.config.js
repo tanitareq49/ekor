@@ -7,6 +7,9 @@ module.exports = {
         'barlow': ['Barlow', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
+      boxShadow: {
+        'custom': '0px 4px 30px 0px rgba(41, 52, 60, 0.08)'
+      },
       colors: {
         'green-800': '#1D7460',
         'green-600': '#22826C',
